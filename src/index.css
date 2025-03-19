@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root,
+body,
+html {
+  @apply bg-customBg;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch !important;
+  max-width: 1580px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  font-family: "DM Sans","sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
