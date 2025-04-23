@@ -15,10 +15,43 @@ function Services() {
 
   const slidesData = [
     {
+      title1: "Family Visa",
+      title2: "Services",
+      img: servicesman6,
+      num: "01",
+      description:
+        "A UAE Family Visa allows expatriates residing in the UAE to sponsor their immediate family members, including spouses and children, ensuring they can legally reside in the country. The UAE government has set specific requirements to obtain a family visa.",
+      dropdown:
+        "Bringing your family to the UAE should be an exciting journey, not a complicated process. At DocZone, we simplify family visa applications, ensuring a smooth and hassle-free experience. Whether you're sponsoring your spouse, children, or parents, our team handles everything from document preparation and submission to approvals and visa stamping. We stay updated with UAE immigration laws to provide accurate guidance, avoiding unnecessary delays and rejections. Our services also include visa renewals, status changes, and assistance with medical and Emirates ID registration. With DocZone, you can focus on what matters most—being with your family—while we take care of the paperwork.",
+      heading: "Family Visa Services",
+      process: [
+        {
+          t1: "Eligibility Check  ",
+          p1: " Verify sponsor’s salary and accommodation requirements.",
+        },
+        {
+          t1: "Document Submission ",
+          p1: " Provide passports, certificates, Emirates ID, labor contract, and tenancy agreement",
+        },
+        {
+          t1: "Medical & Emirates ID  ",
+          p1: " Family members complete medical tests and register for Emirates ID.",
+        },
+        {
+          t1: "Visa Processing   ",
+          p1: " Apply through GDRFA; processing takes 3-4 working days.",
+        },
+        {
+          t1: "Final Approval",
+          p1: " Residency visa is stamped on the passport.",
+        },
+      ],
+    },
+    {
       title1: "PRO",
       title2: "Services",
       img: servicesman1,
-      num: "01",
+      num: "02",
       description:
         "Setting up a business in Dubai requires navigating a complex web of administrative and governmental processes. At DocZone, we specialize in providing seamless PRO services to assist you in obtaining necessary licenses, visas, and approvals. ",
       dropdown:
@@ -51,7 +84,7 @@ function Services() {
       title1: "Document",
       title2: "Attestation",
       img: servicesman2,
-      num: "02",
+      num: "03",
       description:
         "UAE attestation validates documents for work, study, or business. It involves HRD/SDM, notary, or Chamber of Commerce attestation, followed by MEA, UAE Embassy, and MOFA steps. Our service offers tracking and support for a smooth process.",
       dropdown:
@@ -84,7 +117,7 @@ function Services() {
       title1: "Labor &",
       title2: "Emigration Service",
       img: servicesman3,
-      num: "03",
+      num: "04",
       description:
         "Navigating the UAE’s labor and immigration landscape can be complex, but Doczone simplifies the process. We specialize in providing comprehensive support, from employment visa quotas and work permit issuance to contract amendments and Emirates ID registration. ",
       dropdown:
@@ -117,7 +150,7 @@ function Services() {
       title1: "License Renewal",
       title2: "& Amendment",
       img: servicesman4,
-      num: "04",
+      num: "05",
       description:
         "As businesses grow, restructuring and modifications may require amendments to the trade license. Dubai’s licensing authorities allow various amendments, including changes in company name, directors, business activities, or registered address.",
       dropdown:
@@ -146,7 +179,7 @@ function Services() {
       title1: "Health",
       title2: "Insurance Services",
       img: servicesman5,
-      num: "05",
+      num: "06",
       description:
         "Health insurance is a mandatory requirement for all residents in the UAE, ensuring access to quality healthcare services. Whether you are an individual, a family, or a business looking to provide insurance for employees.",
       dropdown:
@@ -175,39 +208,7 @@ function Services() {
         },
       ],
     },
-    {
-      title1: "Family Visa",
-      title2: "Services",
-      img: servicesman6,
-      num: "06",
-      description:
-        "A UAE Family Visa allows expatriates residing in the UAE to sponsor their immediate family members, including spouses and children, ensuring they can legally reside in the country. The UAE government has set specific requirements to obtain a family visa.",
-      dropdown:
-        "Bringing your family to the UAE should be an exciting journey, not a complicated process. At DocZone, we simplify family visa applications, ensuring a smooth and hassle-free experience. Whether you're sponsoring your spouse, children, or parents, our team handles everything from document preparation and submission to approvals and visa stamping. We stay updated with UAE immigration laws to provide accurate guidance, avoiding unnecessary delays and rejections. Our services also include visa renewals, status changes, and assistance with medical and Emirates ID registration. With DocZone, you can focus on what matters most—being with your family—while we take care of the paperwork.",
-      heading: "Family Visa Services",
-      process: [
-        {
-          t1: "Eligibility Check  ",
-          p1: " Verify sponsor’s salary and accommodation requirements.",
-        },
-        {
-          t1: "Document Submission ",
-          p1: " Provide passports, certificates, Emirates ID, labor contract, and tenancy agreement",
-        },
-        {
-          t1: "Medical & Emirates ID  ",
-          p1: " Family members complete medical tests and register for Emirates ID.",
-        },
-        {
-          t1: "Visa Processing   ",
-          p1: " Apply through GDRFA; processing takes 3-4 working days.",
-        },
-        {
-          t1: "Final Approval",
-          p1: " Residency visa is stamped on the passport.",
-        },
-      ],
-    },
+  
     {
       title1: "Golden Visa",
       title2: "Services",

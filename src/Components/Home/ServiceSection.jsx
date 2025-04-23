@@ -15,6 +15,14 @@ import Home6 from "../../assets/images/services6.png";
 const settings = [
   {
     num: "01",
+    image: Home6,
+    title: "FAMILY VISA ",
+    title2: "SERVICES",
+    description:
+      "A UAE Family Visa allows expatriates residing in the UAE to sponsor their immediate family members, including spouses and children,",
+  },
+  {
+    num: "02",
     image: Home1,
     title: "PRO",
     title2: "SERVICES",
@@ -22,7 +30,7 @@ const settings = [
       " Setting up a business in Dubai requires navigating a complex web of administrative and governmental processes.",
   },
   {
-    num: "02",
+    num: "03",
     image: Home2,
     title: "DOCUMENT",
     title2: "ATTESTATION",
@@ -30,7 +38,7 @@ const settings = [
       "UAE attestation validates documents for work, study, or business. It involves HRD/SDM, notary, or Chamber of Commerce attestation,",
   },
   {
-    num: "03",
+    num: "04",
     image: Home3,
     title: "LABOUR & ",
     title2: "EMIGRATION SERVICE",
@@ -38,7 +46,7 @@ const settings = [
       "Navigating the UAE’s labor and immigration landscape can be complex, but Doczone simplifies the process.",
   },
   {
-    num: "04",
+    num: "05",
     image: Home4,
     title: "LISCENCE RENEWAL &",
     title2: " AMENDMENT",
@@ -46,21 +54,14 @@ const settings = [
       "Health insurance is a mandatory requirement for all residents in the UAE, ensuring access to quality healthcare services.",
   },
   {
-    num: "05",
+    num: "06",
     image: Home5,
     title: "HEALTH INSURANCE ",
     title2: "SERVICES",
     description:
       "Health insurance is a mandatory requirement for all residents in the UAE, ensuring access to quality healthcare services.",
   },
-  {
-    num: "06",
-    image: Home6,
-    title: "FAMILY VISA ",
-    title2: "SERVICES",
-    description:
-      "A UAE Family Visa allows expatriates residing in the UAE to sponsor their immediate family members, including spouses and children,",
-  },
+ 
   {
     num: "07",
     image: Home2,

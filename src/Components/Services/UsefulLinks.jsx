@@ -6,13 +6,13 @@ import { LuSquareArrowOutUpRight } from "react-icons/lu";
     "Dubai Insurance Services",
     "Customer Happiness Centers",
     "Dubai Medical Fitness Centers",
-    "MOHRE Inquiry Services",
-    "Fines Inquiry Service",
     "Unified Number Inquiry Service",
     "Fines Inquiry and Payment",
     "Zajel: Track your shipment",
+    "EHS Medical Fitness Centers",
     "Digital ID Log-In",
-    "EHS Medical Fitness Centers"
+    "MOHRE Inquiry Services",
+    "Fines Inquiry Service",
   ];
 function UsefulLimks() {
   return (

@@ -9,6 +9,7 @@ import Reviews from '../Components/Home/Reviews'
 import FAQ from '../Components/Home/FAQ'
 import ConnectUs from '../Components/Home/ConnectUs'
 import Footer from '../Components/Footer'
+import GovtPartner from '../Components/Home/GovtPartner'
 function Home() {
   return (
     <div>
@@ -17,6 +18,7 @@ function Home() {
     <ServiceSection/>
     <UaeSection/>
     <Whatwedo/>
+    <GovtPartner/>
     <FastAndQuality/>
     <Reviews/>
     <FAQ/>

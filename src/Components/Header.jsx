@@ -25,8 +25,8 @@ function Header() {
       className={`relative mx-auto max-w-[1580px] top-0 left-0 w-full flex justify-between items-center py-4 px-24 z-50 transition-all duration-300 ${
         isScrolled || location.pathname !== "/" ? "bg-customBg shadow-lg" : "bg-transparent"
       }`}
-    >
-      <img src={logo} alt="logo" className="h-12" />
+    ><a href="/">
+      <img src={logo} alt="logo" className="h-12" /></a>
       <nav className="ml-80">
         <ul className="flex space-x-16 text-[#FFFFFF] bg-[linear-gradient(180deg,rgba(65,190,161,0.18)_0%,rgba(90,137,253,0.09)_0%)] first-line: text-lg font-light px-8 py-4 rounded-full">
           {["Home", "About", "Services", "Contact"].map((navItem) => (
