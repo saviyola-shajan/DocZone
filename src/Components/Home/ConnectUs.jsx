@@ -4,7 +4,6 @@ import * as Yup from "yup";
 import connectUs from "../../assets/images/connectus img.png";
 
 function ConnectUs() {
-  // Form validation schema
   const validationSchema = Yup.object({
     name: Yup.string().min(3, "Too short!").required("Name is required"),
     mobile: Yup.string()
@@ -14,7 +13,6 @@ function ConnectUs() {
     // location: Yup.string().required("Location is required"),
   });
 
-  // Formik setup
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -31,12 +29,12 @@ function ConnectUs() {
   });
 
   return (
-    <div className="min-h-screen p-24 flex">
-      <div className="w-1/2 flex justify-center items-center">
+    <div className="min-h-screen px-4 sm:px-10 md:px-16 lg:px-20 xl:px-24 py-10 sm:py-16 md:py-24 flex flex-col lg:flex-row">
+      <div className="w-full lg:w-1/2 flex justify-center items-center mb-10 lg:mb-0">
         <img src={connectUs} alt="contact" className="max-w-full h-auto" />
       </div>
-      <div className="w-1/2 px-6 text-white mt-8">
-        <h1 className="text-3xl font-medium mb-6">
+      <div className="w-full lg:w-1/2 px-2 sm:px-6 text-white mt-4 lg:mt-8">
+        <h1 className="text-2xl sm:text-3xl font-medium mb-6">
           Connect With Us For More Enquiry
         </h1>
         <form onSubmit={formik.handleSubmit} className="space-y-8">
@@ -52,8 +50,8 @@ function ConnectUs() {
               <p className="text-red-500 text-sm">{formik.errors.name}</p>
             )}
           </div>
-          <div className="flex gap-x-4">
-            <div className="w-1/2">
+          <div className="flex flex-col sm:flex-row gap-4">
+            <div className="w-full sm:w-1/2">
               <input
                 type="text"
                 name="mobile"
@@ -65,7 +63,7 @@ function ConnectUs() {
                 <p className="text-red-500 text-sm">{formik.errors.mobile}</p>
               )}
             </div>
-            <div className="w-1/2">
+            <div className="w-full sm:w-1/2">
               <input
                 type="email"
                 name="email"
@@ -104,7 +102,7 @@ function ConnectUs() {
           </div>
           <button
             type="submit"
-            className="w-[40%] bg-[#22EEBF]  text-[#000000] text-xl font-medium py-2 rounded-full"
+            className="w-[60%] sm:w-[40%] bg-[#22EEBF] text-[#000000] text-xl font-medium py-2 rounded-full items-center justify-center"
           >
             Submit
           </button>

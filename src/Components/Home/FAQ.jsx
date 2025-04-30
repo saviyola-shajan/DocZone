@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa6";
+
 function FAQ() {
   const Questions = [
     {
@@ -80,25 +81,27 @@ function FAQ() {
     newStates[index] = !OpenStates[index];
     setOpenStates(newStates);
   };
+
   return (
-    <div className="min-h-screen px-24 py-20 text-[#FFFFFF]">
-      <h1 className="text-6xl font-medium">
+    <div className="h-auto px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24 py-10 sm:py-16 md:py-20 text-[#FFFFFF]">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium">
         Frequently
         <br />
         <span className="opacity-75">asked Question</span>
       </h1>
-      <div className="hidden sm:hidden md:block pb-16 mt-12">
+
+      <div className="pb-16 mt-8 sm:mt-10 md:mt-12">
         {Questions.map((item, index) => (
           <div
             key={index}
-            className="bg-[#595B731A] p-4 rounded-lg mt-4 ml-4 shadow-md"
+            className="bg-[#595B731A] p-4 rounded-lg mt-4 sm:ml-0 md:ml-4 shadow-md"
           >
             <button
               onClick={() => toggleLeftDropdown(index)}
-              className="flex justify-between items-center w-full text-left gap-12"
+              className="flex justify-between items-center w-full text-left gap-6 sm:gap-10 md:gap-12"
             >
               <p className="flex-shrink-0 text-[#41BEA1]">{item.num}</p>
-              <h3 className="text-lg font-semibold text-left flex-1">
+              <h3 className="text-base sm:text-lg font-semibold text-left flex-1">
                 {item.question}
               </h3>
               <span
@@ -112,7 +115,7 @@ function FAQ() {
               </span>
             </button>
             {OpenStates[index] && (
-              <p className="mt-2 text-base text-[#FFFFFFCC] transition-all duration-300 ease-in-out">
+              <p className="mt-2 text-sm sm:text-base text-[#FFFFFFCC] transition-all duration-300 ease-in-out">
                 {item.answer}
               </p>
             )}

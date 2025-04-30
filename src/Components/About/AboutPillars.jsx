@@ -1,33 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
+import { values } from "../Constants/Constant";
 
-const values = [
-  {
-    number: "01",
-    title: "Customer Satisfaction",
-    description:
-      "The measure of our success lies in the satisfaction of our clients. We are dedicated to not just meeting, but consistently exceeding expectations, fostering strong, long-term relationships built on trust.",
-  },
-  {
-    number: "02",
-    title: "Transparency",
-    description:
-      "We value open and clear communication, making it our priority to keep our clients informed and involved at every stage of their document clearing or visa application journey.",
-  },
-  {
-    number: "03",
-    title: "Excellence",
-    description:
-      "We are committed to upholding the highest standards in our services. Each document and visa application undergoes meticulous attention, ensuring precision and care in every step of the process.",
-  },
-  {
-    number: "04",
-    title: "Uncompromising Quality",
-    description:
-      "Our uncompromising stance on quality is a promise to our clients that they can trust Doczone Dubai to deliver services that are reliable, precise, and of the utmost standard.",
-  },
-];
 function AboutPillars() {
   return (
     <div className="min-h-screen text-[#FFFFFF] bg-[#050F29] p-24 bg-[linear-gradient(222deg,rgba(29,44,97,0.80) -72.39%,#050F29 76.48%)]">

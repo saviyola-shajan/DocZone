@@ -4,15 +4,14 @@ import { GoArrowUpRight } from "react-icons/go";
 import { FaGlobe } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneVolume } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io5";
+
 const Footer = () => {
   return (
-    <footer className="pt-2 sm:pt-10 px-4 sm:px-8 md:px-14 lg:px-24 xl:px-32 min-h-[70vh]">
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 md:gap-4 text-center sm:text-left">
-        <div className="px-4">
+    <footer className="pt-2 sm:pt-10 px-4 sm:px-8 md:px-14 lg:px-24 xl:px-32 min-h-[70vh] w-full max-w-screen-2xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 md:gap-4 text-center sm:text-left">
+        <div className="px-4 w-full">
           <h3 className="mt-3 mb-4 sm:mb-6 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Company
           </h3>
@@ -59,79 +58,55 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Services Section */}
-        <div className="px-4">
+        <div className="px-4 w-full">
           <h3 className="mt-3 mb-4 sm:mb-6 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Services
           </h3>
           <ul className="leading-[40px] sm:leading-[45px] text-lg sm:text-xl font-300 text-[#FFFFFF99]">
             <li>
-              <a
-                href="/branding"
-                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
-              >
+              <a href="/branding" className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                 Pro Services
               </a>
             </li>
             <li>
-              <a
-                href="/technology"
-                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
-              >
+              <a href="/technology" className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                 Document Attestation
               </a>
             </li>
             <li>
-              <a
-                href="/digital-marketing"
-                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
-              >
+              <a href="/digital-marketing" className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                 Labour & Emigration Service
               </a>
             </li>
             <li>
-              <a
-                href="/social-branding"
-                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
-              >
+              <a href="/social-branding" className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                 License Renewal & Amendment
               </a>
             </li>
             <li>
-              <a
-                href="/experience-design"
-                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
-              >
+              <a href="/experience-design" className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                 Health & Insurance Services
               </a>
             </li>
             <li>
-              <a
-                href="/experience-design"
-                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
-              >
+              <a href="/experience-design" className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                 Family Visa Services
               </a>
-            </li>{" "}
+            </li>
             <li>
-              <a
-                href="/experience-design"
-                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
-              >
+              <a href="/experience-design" className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                 Golden Visa Services
               </a>
-            </li>{" "}
+            </li>
             <li>
-              <a
-                href="/experience-design"
-                className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"
-              >
+              <a href="/experience-design" className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                 VAT Registration Filing
               </a>
             </li>
           </ul>
         </div>
-        <div className="px-4 w-full sm:w-96 text-center sm:text-left">
+
+        <div className="px-4 w-full max-w-md mx-auto sm:mx-0 text-center sm:text-left">
           <h3 className="mt-3 mb-4 sm:mb-6 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Connect Us
           </h3>
@@ -212,7 +187,7 @@ const Footer = () => {
             </li>
             <Link
               to="/contact"
-              className="group relative transition-all duration-300 text-[#000000] text-lg px-4 py-2 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[60%] mt-10"
+              className="group relative transition-all duration-300 text-[#000000] text-lg px-4 py-2 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[60%] mx-auto sm:mx-0 mt-10"
             >
               Connect Us
               <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full">
@@ -223,11 +198,10 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Footer Bottom Section */}
       <div className="border-t border-[#3A3A3A] mt-5 sm:mt-6 pt-4 sm:pt-6 mb-4 text-[#FFFFFF] text-center text-sm sm:text-lg font-200 leading-normal">
-        <div className="flex flex-wrap justify-center items-center gap-2">
+        <div className="flex flex-wrap justify-center items-center gap-2 px-4">
           <p>© 2025 &nbsp; DOCZONE &nbsp; All Rights Reserved &nbsp;|&nbsp;</p>
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-2 flex-wrap justify-center">
             <a
               href="/privacy-policy"
               className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full"

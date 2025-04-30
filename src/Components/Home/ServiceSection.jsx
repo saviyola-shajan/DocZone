@@ -5,106 +5,35 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import Home1 from "../../assets/images/services1.png";
-import Home2 from "../../assets/images/services2.png";
-import Home3 from "../../assets/images/services3.png";
-import Home4 from "../../assets/images/services4.png";
-import Home5 from "../../assets/images/services5.png";
-import Home6 from "../../assets/images/services6.png";
-
-const settings = [
-  {
-    num: "01",
-    image: Home6,
-    title: "FAMILY VISA ",
-    title2: "SERVICES",
-    description:
-      "A UAE Family Visa allows expatriates residing in the UAE to sponsor their immediate family members, including spouses and children,",
-  },
-  {
-    num: "02",
-    image: Home1,
-    title: "PRO",
-    title2: "SERVICES",
-    description:
-      " Setting up a business in Dubai requires navigating a complex web of administrative and governmental processes.",
-  },
-  {
-    num: "03",
-    image: Home2,
-    title: "DOCUMENT",
-    title2: "ATTESTATION",
-    description:
-      "UAE attestation validates documents for work, study, or business. It involves HRD/SDM, notary, or Chamber of Commerce attestation,",
-  },
-  {
-    num: "04",
-    image: Home3,
-    title: "LABOUR & ",
-    title2: "EMIGRATION SERVICE",
-    description:
-      "Navigating the UAE’s labor and immigration landscape can be complex, but Doczone simplifies the process.",
-  },
-  {
-    num: "05",
-    image: Home4,
-    title: "LISCENCE RENEWAL &",
-    title2: " AMENDMENT",
-    description:
-      "Health insurance is a mandatory requirement for all residents in the UAE, ensuring access to quality healthcare services.",
-  },
-  {
-    num: "06",
-    image: Home5,
-    title: "HEALTH INSURANCE ",
-    title2: "SERVICES",
-    description:
-      "Health insurance is a mandatory requirement for all residents in the UAE, ensuring access to quality healthcare services.",
-  },
- 
-  {
-    num: "07",
-    image: Home2,
-    title: "GOLDEN VISA",
-    title2: "SERVICES",
-    description:
-      "The UAE Golden Visa is a long-term residency visa that allows expatriates, investors, entrepreneurs, skilled professionals,",
-  },
-  {
-    num: "08",
-    image: Home4,
-    title: "VAT REGISTRATION",
-    title2: "SERVICES",
-    description:
-      "Value Added Tax (VAT) is a mandatory requirement for businesses in the UAE that meet the revenue threshold set by the Federal Tax Authority.",
-  },
-];
+import { settings } from "../Constants/Constant";
 
 function ServiceSection() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   return (
-    <div className="px-24 py-20 min-h-screen relative">
-      <div className="absolute right-32 mt-32 flex space-x-4 z-20">
+    <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-10 sm:py-16 md:py-20 h-auto lg:min-h-screen relative">
+      <div className="absolute right-4 sm:right-8 md:right-24 lg:right-32 mt-6 sm:mt-10 md:mt-20 flex space-x-4 z-20">
         <button
           ref={prevRef}
-          className="bg-[#41BEA1] text-[#000000] p-4 rounded-full"
+          className="bg-[#41BEA1] text-[#000000] p-3 sm:p-4 rounded-full"
         >
-          <FaChevronLeft size={20} />
+          <FaChevronLeft size={18} className="sm:size-[20px]" />
         </button>
         <button
           ref={nextRef}
-          className="bg-[#41BEA1] text-[#000000] p-4 rounded-full"
+          className="bg-[#41BEA1] text-[#000000] p-3 sm:p-4 rounded-full"
         >
-          <FaChevronRight size={20} />
+          <FaChevronRight size={18} className="sm:size-[20px]" />
         </button>
       </div>
 
       <div>
         <div className="text-[#FFFFFF]">
-          <h1 className="text-6xl font-medium mb-8">Choose Your Service</h1>
-          <p className="font-light text-xl mb-6 max-w-2xl text-justify">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium mb-6 sm:mb-8">
+            Choose Your Service
+          </h1>
+          <p className="font-light text-sm sm:text-base md:text-lg lg:text-xl mb-6 max-w-full sm:max-w-2xl text-justify">
             A document clearing and visa services company simplifies complex
             administrative processes for individuals and businesses. From
             securing visas to handling legal documents, and residency permits.
@@ -114,8 +43,9 @@ function ServiceSection() {
         <Swiper
           slidesPerView={1}
           spaceBetween={20}
-          lopp={true}
+          loop={true}
           breakpoints={{
+            640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
@@ -125,27 +55,27 @@ function ServiceSection() {
             swiper.params.navigation.nextEl = nextRef.current;
           }}
           modules={[Navigation]}
-          className="w-full"
+          className="w-full mt-10"
         >
           {settings.map((service, index) => (
-            <SwiperSlide key={index} className="p-4">
-              <div className="relative rounded-3xl border border-[#41BEA1] shadow-lg  overflow-hidden">
+            <SwiperSlide key={index} className="p-2 sm:p-4">
+              <div className="relative rounded-3xl border border-[#41BEA1] shadow-lg overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full object-cover rounded-lg"
+                  className="w-full object-cover rounded-lg h-48 sm:h-60 md:h-72 lg:h-80"
                 />
-                <div className="absolute inset-0 flex flex-col p-10 z-10">
+                <div className="absolute inset-0 flex flex-col p-4 sm:p-6 md:p-10 z-10">
                   <div className="flex items-center">
-                    <span className="w-10 border-t-2 border-gray-700 mr-3"></span>
-                    <p className="text-[#41BEA1] text-lg">{service.num}</p>
+                    <span className="w-8 sm:w-10 border-t-2 border-gray-700 mr-3"></span>
+                    <p className="text-[#41BEA1] text-sm sm:text-base">{service.num}</p>
                   </div>
-                  <h3 className="text-2xl font-medium text-[#FFFFFF] mt-4">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-[#FFFFFF] mt-3 sm:mt-4">
                     {service.title}
                     <br />
                     {service.title2}
                   </h3>
-                  <p className="text-[#FFFFFF] text-base font-light mt-4">
+                  <p className="text-[#FFFFFF] text-xs sm:text-sm md:text-base font-light mt-3 sm:mt-4">
                     {service.description}
                   </p>
                 </div>
