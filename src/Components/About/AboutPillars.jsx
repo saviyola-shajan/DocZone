@@ -5,10 +5,10 @@ import { values } from "../Constants/Constant";
 
 function AboutPillars() {
   return (
-    <div className="min-h-screen text-[#FFFFFF] bg-[#050F29] p-24 bg-[linear-gradient(222deg,rgba(29,44,97,0.80) -72.39%,#050F29 76.48%)]">
-      <h1 className="text-[#41BEA1] font-semibold text-5xl">Our Commitment:</h1>
-      <h1 className=" font-semibold text-5xl">The Pillars of Doczone Dubai</h1>
-      <p className="mt-10 font-normal text-lg text-justify">
+    <div className="min-h-screen text-[#FFFFFF] bg-[#050F29] px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24 py-16 sm:py-20 bg-[linear-gradient(222deg,rgba(29,44,97,0.80)_-72.39%,#050F29_76.48%)]">
+      <h1 className="text-[#41BEA1] font-semibold text-3xl sm:text-4xl md:text-5xl">Our Commitment:</h1>
+      <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl">The Pillars of Doczone Dubai</h1>
+      <p className="mt-8 sm:mt-10 font-normal text-base sm:text-lg text-justify">
         At Doczone Dubai, our commitment transcends the mere act of service
         delivery; it's an embodiment of our dedication to forging enduring
         relationships, cultivating trust, and guaranteeing that each encounter
@@ -17,8 +17,7 @@ function AboutPillars() {
         providing an unparalleled level of service that is both professional and
         personal.
       </p>
-      <p className="font-normal text-lg text-justify">
-        {" "}
+      <p className="font-normal text-base sm:text-lg text-justify mt-4">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Our commitment is multifaceted,
         encompassing a deep-seated respect for our clients' time, an unwavering
         focus on delivering results with integrity, and a relentless pursuit of
@@ -28,34 +27,34 @@ function AboutPillars() {
         guidance, and ensuring that our clients are well-informed and supported
         throughout their journey with us.
       </p>
-      <div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 px-10 py-16">
-          {values.map((value, index) => (
-            <div
-              key={index}
-              className="relative bg-white text-black rounded-3xl py-8 px-12 shadow-lg border border-[#008364]"
-            >
-              <div className="text-8xl font-medium text-[#006D54] flex gap-10">
-                {value.number}
-                <h3 className="text-3xl font-semibold text-[#000000] mt-2 text-right">
-                  {value.title}
-                </h3>
-              </div>
-              <p className="text-[#000000] font-normal text-lg mt-2">
-                {value.description}
-              </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-16 lg:gap-20 px-2 sm:px-6 md:px-10 py-12 sm:py-16">
+        {values.map((value, index) => (
+          <div
+            key={index}
+            className="relative bg-white text-black rounded-3xl py-6 sm:py-8 px-6 sm:px-12 shadow-lg border border-[#008364]"
+          >
+            <div className="text-6xl sm:text-7xl md:text-8xl font-medium text-[#006D54] flex gap-6 sm:gap-10">
+              {value.number}
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#000000] mt-1 sm:mt-2 text-right">
+                {value.title}
+              </h3>
             </div>
-          ))}
-        </div>
+            <p className="text-[#000000] font-normal text-base sm:text-lg mt-2">
+              {value.description}
+            </p>
+          </div>
+        ))}
       </div>
+
       <div className="items-center justify-center flex">
         <Link
           to="/contact"
-          className="group relative transition-all duration-300 text-[#000000] text-lg px-6 py-3 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[25%]"
+          className="group relative transition-all duration-300 text-[#000000] text-base sm:text-lg px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[70%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%]"
         >
           Connect With Us
-          <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full">
-            <GoArrowUpRight className="text-black text-lg w-6 h-6" />
+          <span className="w-8 sm:w-9 h-8 sm:h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full">
+            <GoArrowUpRight className="text-black text-lg w-5 sm:w-6 h-5 sm:h-6" />
           </span>
         </Link>
       </div>
