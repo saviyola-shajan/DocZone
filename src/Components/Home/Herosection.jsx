@@ -17,7 +17,7 @@ function Herosection() {
   }, []);
 
   return (
-    <div className="h-screen bg-cover bg-center relative">
+    <div className="h-[135svh] md:min-h-screen bg-cover bg-center relative mt-12 md:mt-0">
       <div className="fixed top-0 left-0 w-full z-50">
         <Header />
       </div>
@@ -61,7 +61,7 @@ function Herosection() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 relative mt-12 lg:mt-20 lg:ml-40 flex justify-center lg:justify-end">
-          <div className=" block md:hidden lg:block border-2 border-white w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 absolute left-4 sm:left-6 lg:left-20 hidden:rounded-tr-[60px] hidden:rounded-bl-[60px] lg:rounded-tr-[75px] lg:rounded-bl-[75px] rounded-md"></div>
+          <div className=" hidden lg:block border-2 border-white w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 absolute left-4 sm:left-6 lg:left-20 hidden:rounded-tr-[60px] hidden:rounded-bl-[60px] lg:rounded-tr-[75px] lg:rounded-bl-[75px] rounded-md"></div>
           <img
             src={content[index].image}
             alt="SLIDER IMG"

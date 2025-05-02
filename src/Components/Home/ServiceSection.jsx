@@ -13,18 +13,18 @@ function ServiceSection() {
 
   return (
     <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-10 sm:py-16 md:py-20 h-auto lg:min-h-screen relative">
-      <div className="absolute right-4 sm:right-8 md:right-24 lg:right-32 mt-6 sm:mt-10 md:mt-20 flex space-x-4 z-20">
+      <div className="absolute right-4 sm:right-8 md:right-24 lg:right-32 mt-36 flex space-x-4 z-20">
         <button
           ref={prevRef}
-          className="bg-[#41BEA1] text-[#000000] p-3 sm:p-4 rounded-full"
+          className="bg-[#41BEA1] text-[#000000] p-2 sm:p-3 rounded-full"
         >
-          <FaChevronLeft size={18} className="sm:size-[20px]" />
+          <FaChevronLeft className="h-4 w-4 md:h-6 md:w-6 rounded-full" />
         </button>
         <button
           ref={nextRef}
-          className="bg-[#41BEA1] text-[#000000] p-3 sm:p-4 rounded-full"
+          className="bg-[#41BEA1] text-[#000000] p-2 sm:p-3 rounded-full"
         >
-          <FaChevronRight size={18} className="sm:size-[20px]" />
+          <FaChevronRight className="h-4 w-4 md:h-6 md:w-6 rounded-full" />
         </button>
       </div>
 

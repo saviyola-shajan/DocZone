@@ -102,7 +102,7 @@ function ConnectUs() {
           </div>
           <button
             type="submit"
-            className="w-[60%] sm:w-[40%] bg-[#22EEBF] text-[#000000] text-xl font-medium py-2 rounded-full items-center justify-center"
+            className="w-[60%] sm:w-[40%] bg-[#22EEBF] text-[#000000] text-xl font-medium py-2 rounded-full text-center justify-center items-center"
           >
             Submit
           </button>

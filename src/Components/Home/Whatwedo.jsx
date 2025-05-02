@@ -54,7 +54,7 @@ function Whatwedo() {
 
         {/* Image and Steps 04–05 side-by-side on lg+ screens */}
         <div className="flex flex-col lg:flex-row gap-6 w-full lg:w-auto">
-          <div className="w-full lg:w-72 h-auto sm:h-[480px]">
+          <div className="hidden md:block w-full lg:w-72 h-auto sm:h-[480px]">
             <img
               src={Image}
               alt="City"
@@ -63,7 +63,7 @@ function Whatwedo() {
           </div>
 
           <div className="space-y-4 w-full lg:w-72">
-            <div className="bg-[#5A89FD26] p-4 rounded-lg w-full h-auto min-h-[200px] text-white flex items-center justify-between">
+            <div className="bg-[#5A89FD26] p-6  rounded-2xl w-full h-auto md:min-h-[200px] text-white flex items-center justify-between">
               <div className="flex items-center">
                 <div className="text-3xl sm:text-4xl md:text-5xl font-normal">04</div>
                 <div className="ml-4">
@@ -78,7 +78,7 @@ function Whatwedo() {
               </a>
             </div>
 
-            <div className="bg-[#5A89FD26] p-4 rounded-lg w-full h-auto min-h-[220px] text-white flex items-center justify-between">
+            <div className="bg-[#5A89FD26] p-6  rounded-2xl w-full h-auto md:min-h-[220px] text-white flex items-center justify-between">
               <div className="flex items-center">
                 <div className="text-3xl sm:text-4xl md:text-5xl font-normal">05</div>
                 <div className="ml-4">
