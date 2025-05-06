@@ -22,14 +22,14 @@ function FastAndQuality() {
           Fast and Quality: Your Trusted Partner in Dubai
         </h1>
         <p className="text-base sm:text-lg font-light text-justify">
-          At <span className="font-bold">DocZone Dubai</span>, we understand
+          At <span className="font-bold text-[#22EEBF]">DocZone Dubai</span>, we understand
           that time is money. That’s why we combine speed with precision to
           deliver fast, reliable, and high-quality services. From document
           clearing to visa processing, our team ensures every task is completed
           efficiently without compromising on quality. With us, you get the best
           of both worlds – quick turnaround times and exceptional results.
         </p>
-        <h4 className="text-lg sm:text-xl font-medium mt-10">
+        <h4 className="text-lg sm:text-xl font-medium mt-10 text-[#22EEBF]">
           Our mission is clear:
         </h4>
         <p className="text-base sm:text-lg font-light text-justify mt-3">

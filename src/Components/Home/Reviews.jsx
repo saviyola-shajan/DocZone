@@ -2,6 +2,8 @@ import React from "react";
 import GoogleReviewImage from "../../assets/images/googlereviews.png";
 import reviewImg from "../../assets/images/reviewimg.png";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { GoArrowUpRight } from "react-icons/go";
 
 function Reviews() {
   return (
@@ -28,6 +30,17 @@ function Reviews() {
               ))}
             <p className="ml-4 font-medium text-xl sm:text-3xl md:text-4xl">4.9</p>
           </div>
+          <div>
+          <Link
+            to="/contact"
+            className="group relative transition-all text-center duration-300 text-[#000000] text-lg px-4 py-2 mt-6 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[70%] sm:w-[50%] md:w-[40%] lg:w-[40%]"
+          >
+            More Reviews
+            <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full">
+              <GoArrowUpRight className="text-black text-lg w-6 h-6" />
+            </span>
+          </Link>
+        </div>
           <div className="bg-[#FFFFFF] mt-6 rounded-2xl p-4 sm:p-6 text-[#000000]">
             <div className="flex items-center gap-3 flex-wrap sm:flex-nowrap">
               <img src={reviewImg} alt="" className="w-16 sm:w-20 md:w-24" />

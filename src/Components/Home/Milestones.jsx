@@ -6,7 +6,7 @@ function Milestones() {
   return (
     <div className="min-h-screen px-6 sm:px-10 md:px-16 lg:px-24 py-10 sm:py-14 md:py-16 bg-[radial-gradient(50%_70%_at_90%_60%,#18275a_0%,rgba(66,98,216,0)_100%)]">
       <div className="bg-[#FFFFFF] rounded-2xl">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-40 p-6">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-40 p-6 justify-between">
           <p className="font-medium text-base sm:text-lg md:text-xl text-[#18275a]">
             At DocZone Dubai, we turn complicated paperwork into simple,<br className="hidden sm:block" />
             stress-free solutions for all your document clearing and visa needs.

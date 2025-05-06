@@ -10,7 +10,7 @@ function MissionVision() {
       {/* Vision Section */}
       <div className="flex flex-col lg:flex-row items-center justify-between mb-16 gap-10">
         <div className="w-full lg:w-1/2 lg:pr-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium text-[#0E1834]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium text-[#121212]">
             Vision
           </h1>
           <p className="mt-4 text-[#161616] text-base sm:text-lg font-normal text-justify">
@@ -69,7 +69,7 @@ function MissionVision() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:pl-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium text-[#008364]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium text-[#121212]">
             Mission
           </h1>
           <p className="mt-4 text-[#161616] text-base sm:text-lg font-normal text-justify">

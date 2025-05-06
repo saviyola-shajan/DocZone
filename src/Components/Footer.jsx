@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="pt-2 sm:pt-10 px-4 sm:px-8 md:px-14 lg:px-24 xl:px-32 min-h-[70vh] w-full max-w-screen-2xl mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-4 md:gap-4 text-center sm:text-left">
         <div className="px-4 w-full">
-          <h3 className="mt-3 mb-4 sm:mb-6 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
+          <h3 className="mt-3 mb-4 sm:mb-6 text-[#22EEBF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Company
           </h3>
           <ul className="leading-[40px] sm:leading-[45px] text-lg sm:text-xl font-300 text-[#FFFFFF99]">
@@ -49,7 +49,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <h1 className="text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px] mt-8">
+          <h1 className="text-[#22EEBF] text-xl sm:text-2xl font-500 tracking-[0.40px] mt-8">
             Address
           </h1>
           <p className="mt-4 mb-4 sm:mb-6 text-[#FFFFFF99] text-lg sm:text-xl font-500 tracking-[0.40px]">
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
 
         <div className="px-4 w-full">
-          <h3 className="mt-3 mb-4 sm:mb-6 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
+          <h3 className="mt-3 mb-4 sm:mb-6 text-[#22EEBF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Services
           </h3>
           <ul className="leading-[40px] sm:leading-[45px] text-lg sm:text-xl font-300 text-[#FFFFFF99]">
@@ -107,12 +107,12 @@ const Footer = () => {
         </div>
 
         <div className="px-4 w-full max-w-md mx-auto sm:mx-0 text-center sm:text-left">
-          <h3 className="mt-3 mb-4 sm:mb-6 text-[#FFFFFF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
+          <h3 className="mt-3 mb-4 sm:mb-6 text-[#22EEBF] text-xl sm:text-2xl font-500 tracking-[0.40px]">
             Connect Us
           </h3>
           <ul className="leading-[40px] sm:leading-[45px] text-lg sm:text-xl font-300 text-[#000000]">
             <li className="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
-              <p className="whitespace-nowrap bg-[#FFFFFF] rounded-full p-1">
+              <p className="whitespace-nowrap bg-[#22EEBF] rounded-full p-1">
                 <FaGlobe />
               </p>
               <a
@@ -123,7 +123,7 @@ const Footer = () => {
               </a>
             </li>
             <li className="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
-              <p className="whitespace-nowrap bg-[#FFFFFF] rounded-full p-1">
+              <p className="whitespace-nowrap bg-[#22EEBF] rounded-full p-1">
                 <IoIosMail />
               </p>
               <a
@@ -134,7 +134,7 @@ const Footer = () => {
               </a>
             </li>
             <li className="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
-              <p className="whitespace-nowrap bg-[#FFFFFF] rounded-full p-1">
+              <p className="whitespace-nowrap bg-[#22EEBF] rounded-full p-1">
                 <FaPhoneVolume />
               </p>
               <a
@@ -145,7 +145,7 @@ const Footer = () => {
               </a>
             </li>
             <li className="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
-              <p className="whitespace-nowrap bg-[#FFFFFF] rounded-full p-1">
+              <p className="whitespace-nowrap bg-[#22EEBF] rounded-full p-1">
                 <FaPhoneVolume />
               </p>
               <a

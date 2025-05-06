@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
-import UaeImage from "../assets/images/uae image.png";
+import UaeImage from "../assets/images/UNBLOCKING.jpg";
 
 function UaeSection({ bgColor = "#FFFFFF" }) {
   const isDarkBg = bgColor === "#081C46";
@@ -33,7 +33,7 @@ function UaeSection({ bgColor = "#FFFFFF" }) {
         </Link>
       </div>
       <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center items-center">
-        <img src={UaeImage} alt="uae" className="w-full h-auto max-h-[350px] object-contain" />
+        <img src={UaeImage} alt="uae" className="w-full h-auto max-h-[350px] object-contain rounded-xl" />
       </div>
     </div>
   );

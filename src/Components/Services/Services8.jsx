@@ -278,97 +278,95 @@ function Services() {
   };
 
   return (
-    <div className="min-h-screen p-24">
-      <h1 className="text-[#07122D] text-7xl text-center font-semibold">
-        Our Global<span className="text-[#41BEA1]"> Services</span>{" "}
-      </h1>
-      <p className="mt-4 text-xl font-normal text-justify">
-        At Doczone Dubai, our commitment transcends the mere act of service
-        delivery; it's an embodiment of our dedication to forging enduring
-        relationships, cultivating trust, and guaranteeing that each encounter
-        with our clients is marked by a sense of value and satisfaction.
-      </p>
-
-      <div className="my-24">
-        {slidesData.map((service, index) => (
-          <React.Fragment key={index}>
-            <div className="flex mb-24">
-              <div className="w-1/2 flex flex-col justify-center text-left ">
-                <h1 className="font-semibold text-6xl text-[#121212] ml-4">
-                  {service.title1}
+    <div className="min-h-screen p-4 sm:p-8 md:p-16 lg:p-24">
+    <h1 className="text-[#07122D] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-left font-semibold">
+      Our Global<span className="text-[#41BEA1]"> Services</span>
+    </h1>
+    <p className="mt-4 text-base sm:text-lg md:text-xl font-normal text-justify">
+      At Doczone Dubai, our commitment transcends the mere act of service
+      delivery; it's an embodiment of our dedication to forging enduring
+      relationships, cultivating trust, and guaranteeing that each encounter
+      with our clients is marked by a sense of value and satisfaction.
+    </p>
+  
+    <div className="my-12 sm:my-16 md:my-24">
+      {slidesData.map((service, index) => (
+        <React.Fragment key={index}>
+          <div className="flex flex-col lg:flex-row mb-12 lg:mb-24">
+            <div className="w-full lg:w-1/2 flex flex-col justify-center text-left">
+              <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#121212] ml-2 sm:ml-4">
+                {service.title1}
+              </h1>
+              <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#41BEA1] mb-4 sm:mb-6 ml-2 sm:ml-4">
+                {service.title2}
+              </h1>
+              <img src={service.img} alt="1" className="px-0 sm:px-6" />
+            </div>
+            <div className="w-full lg:w-1/2 mt-8 lg:mt-28">
+              <div className="flex items-center">
+                <span className="w-6 sm:w-10 border-t-2 border-gray-700 mr-2 sm:mr-3 mt-4 sm:mt-6"></span>
+                <h1 className="font-medium text-3xl sm:text-4xl md:text-5xl text-[#006D54] mb-1 ml-2 sm:ml-4">
+                  {service.num}
                 </h1>
-                <h1 className="font-semibold text-6xl text-[#41BEA1] mb-6 ml-4">
-                  {service.title2}
-                </h1>
-                <img src={service.img} alt="1" className="px-6" />
               </div>
-              <div className="w-1/2">
-                <div className="flex">
-                  <span className="w-10 border-t-2 border-gray-700 mr-3 mt-6"></span>
-                  <h1 className="font-medium text-5xl text-[#006D54] mb-1 ml-4">
-                    {service.num}
-                  </h1>
-                </div>
-
-                <p className="font-normal text-xl text-[#000000] text-justify">
-                  {service.description}
-                </p>
+  
+              <p className="font-normal text-base sm:text-lg md:text-xl text-[#000000] text-justify mt-2">
+                {service.description}
+              </p>
+            </div>
+          </div>
+  
+          <div className="relative ml-0 sm:ml-24 md:ml-36 lg:ml-52">
+            <div className="absolute w-full bg-[linear-gradient(222deg,_rgba(29,44,97,0.80)_-72.39%,_#050F29_76.48%)] z-10 px-4 sm:px-6 py-6 bottom-32 rounded-t-2xl">
+              <div className="bg-[#41BEA1] inline-block px-4 py-2 [clip-path:polygon(0_0,80%_0,100%_100%,0%_100%)] ml-4 sm:ml-6">
+                <h1 className="font-medium text-lg sm:text-xl md:text-2xl text-[#121212]">
+                  Our{" "}
+                  <span className="text-[#FFFFFF] pr-10 sm:pr-16">
+                    {service.heading}
+                  </span>
+                </h1>
+              </div>
+              <div className="px-4 sm:px-8 py-4 rounded-lg mt-6 sm:mt-8">
+                {service.process.map((processItem, processIndex) => (
+                  <div
+                    key={processIndex}
+                    className="flex flex-col sm:flex-row items-start gap-1 sm:gap-6 mb-2 sm:mb-3"
+                  >
+                    <span className="text-[#41BEA1] font-semibold text-sm sm:text-base min-w-full sm:min-w-[210px]">
+                      {processItem.t1}
+                    </span>
+                    <span className="text-[#FFFFFF] font-normal">
+                      : {processItem.p1}
+                    </span>
+                  </div>
+                ))}
+              </div>
+  
+              <button
+                onClick={() => toggleDropdown(index)}
+                className="absolute left-1/2 -translate-x-1/2 z-10 bottom-[-20px] bg-[#41BEA1] w-12 sm:w-14 h-12 sm:h-14 flex items-center justify-center rounded-full shadow-lg hover:scale-105 transition"
+              >
+                <span className="text-white font-bold text-lg sm:text-xl">
+                  {openDropdowns === index ? <FaArrowUp /> : <FaArrowDown />}
+                </span>
+              </button>
+  
+              <div
+                className={`absolute left-1/2 -translate-x-1/2 mt-6 text-[#121212] bg-[#FFFFFF] p-4 py-6 w-full rounded-b-lg shadow-lg transition-all duration-300 ${
+                  openDropdowns === index
+                    ? "opacity-100 max-h-80 py-6 sm:py-8"
+                    : "opacity-0 max-h-0 overflow-hidden"
+                }`}
+              >
+                <p className="px-4 sm:px-7 text-justify">{service.dropdown}</p>
               </div>
             </div>
-            {
-              <div className="relative ml-52">
-                <div className="absolute bg-[linear-gradient(222deg,_rgba(29,44,97,0.80)_-72.39%,_#050F29_76.48%)] z-10 px-6 py-6 bottom-32 rounded-t-2xl">
-                  <div className="bg-[#41BEA1] inline-block px-4 py-2 [clip-path:polygon(0_0,80%_0,100%_100%,0%_100%)] ml-6">
-                    <h1 className="font-medium text-2xl text-[#121212] ">
-                      Our{" "}
-                      <span className="text-[#FFFFFF] pr-16">
-                        {service.heading}
-                      </span>
-                    </h1>
-                  </div>
-                  <div className="px-8 py-4 rounded-lg mt-8">
-                    {service.process.map((processItem, processIndex) => (
-                      <div
-                        key={processIndex}
-                        className="flex items-start gap-6 mb-3 "
-                      >
-                        <span className="text-[#41BEA1] font-semibold text-base min-w-[210px]">
-                          {processItem.t1}
-                        </span>
-                        <span className="text-[#FFFFFF] font-normal ">
-                          : {processItem.p1}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                  <button
-                    onClick={() => toggleDropdown(index)}
-                    className="absolute left-1/2 -translate-x-1/2 z-10 bottom-[-20px] bg-[#41BEA1] w-14 h-14 flex items-center justify-center rounded-full shadow-lg hover:scale-105 transition"
-                  >
-                    <span className="text-white font-bold text-xl">
-                      {openDropdowns === index ? (
-                        <FaArrowUp />
-                      ) : (
-                        <FaArrowDown />
-                      )}
-                    </span>
-                  </button>
-                  <div
-                    className={`absolute left-1/2 -translate-x-1/2 mt-6 text-[#121212] bg-[#FFFFFF] p-4 py-6 w-full rounded-b-lg shadow-lg transition-all duration-300 ${
-                      openDropdowns === index
-                        ? "opacity-100 max-h-80 py-8"
-                        : "opacity-0 max-h-0 overflow-hidden"
-                    }`}
-                  >
-                    <p className=" px-7 text-justify">{service.dropdown}</p>
-                  </div>
-                </div>
-              </div>
-            }
-          </React.Fragment>
-        ))}
-      </div>
+          </div>
+        </React.Fragment>
+      ))}
     </div>
+  </div>
+  
   );
 }
 

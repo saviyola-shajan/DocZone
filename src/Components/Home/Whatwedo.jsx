@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../assets/images/whatwedo image.png";
+import Image from "../../assets/images/PROCESS.jpg";
 import { GoArrowUpRight } from "react-icons/go";
 
 function Whatwedo() {
@@ -45,14 +45,13 @@ function Whatwedo() {
                   <p className="text-sm sm:text-base md:text-lg font-light">{step.desc}</p>
                 </div>
               </div>
-              <a href="/contact" className="bg-[#FFFFFF] p-2 rounded-full shrink-0 ml-4">
+              <a href="/contact" className="bg-[#22EEBF] p-2 rounded-full shrink-0 ml-4">
                 <GoArrowUpRight className="text-[#000000] w-6 h-6" />
               </a>
             </div>
           ))}
         </div>
 
-        {/* Image and Steps 04–05 side-by-side on lg+ screens */}
         <div className="flex flex-col lg:flex-row gap-6 w-full lg:w-auto">
           <div className="hidden md:block w-full lg:w-72 h-auto sm:h-[480px]">
             <img
@@ -73,7 +72,7 @@ function Whatwedo() {
                   </p>
                 </div>
               </div>
-              <a href="/contact" className="bg-[#FFFFFF] p-2 rounded-full ml-4">
+              <a href="/contact" className="bg-[#22EEBF] p-2 rounded-full ml-4">
                 <GoArrowUpRight className="text-[#000000] w-6 h-6" />
               </a>
             </div>
@@ -88,7 +87,7 @@ function Whatwedo() {
                   </p>
                 </div>
               </div>
-              <a href="/contact" className="bg-[#FFFFFF] p-2 rounded-full ml-4">
+              <a href="/contact" className="bg-[#22EEBF] p-2 rounded-full ml-4">
                 <GoArrowUpRight className="text-[#000000] w-6 h-6" />
               </a>
             </div>

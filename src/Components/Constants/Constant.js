@@ -124,14 +124,6 @@ import Hom6 from "../../assets/images/services6.png";
     },
     {
       num: "05",
-      image: Home4,
-      title: "LISCENCE RENEWAL &",
-      title2: " AMENDMENT",
-      description:
-        "Health insurance is a mandatory requirement for all residents in the UAE, ensuring access to quality healthcare services.",
-    },
-    {
-      num: "06",
       image: Hom5,
       title: "HEALTH INSURANCE ",
       title2: "SERVICES",
@@ -140,7 +132,7 @@ import Hom6 from "../../assets/images/services6.png";
     },
    
     {
-      num: "07",
+      num: "06",
       image: Hom2,
       title: "GOLDEN VISA",
       title2: "SERVICES",
@@ -148,12 +140,20 @@ import Hom6 from "../../assets/images/services6.png";
         "The UAE Golden Visa is a long-term residency visa that allows expatriates, investors, entrepreneurs, skilled professionals,",
     },
     {
-      num: "08",
+      num: "07",
       image: Hom4,
       title: "VAT REGISTRATION",
       title2: "SERVICES",
       description:
         "Value Added Tax (VAT) is a mandatory requirement for businesses in the UAE that meet the revenue threshold set by the Federal Tax Authority.",
     },
+    {
+        num: "08",
+        title: "LISCENCE RENEWAL &",
+        title2: " AMENDMENT",
+        image:Hom1,
+        description:
+          "Health insurance is a mandatory requirement for all residents in the UAE, ensuring access to quality healthcare services.",
+      },
   ];
   

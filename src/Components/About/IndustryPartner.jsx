@@ -26,11 +26,11 @@ function IndustryPartner() {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 w-full lg:w-1/2 py-6 md:py-8">
         {brands.map((brand, index) => (
-          <div key={index} className="justify-center items-center flex">
+          <div key={index} className="justify-center items-center flex bg-black/5 rounded-2xl">
             <img
               src={brand}
               alt={`Slide ${index + 1}`}
-              className="max-w-full h-[25vh] object-contain px-6 md:px-10"
+              className="max-w-full h-[25vh] object-contain px-6 md:px-10 mix-blend-multiply"
             />
           </div>
         ))}

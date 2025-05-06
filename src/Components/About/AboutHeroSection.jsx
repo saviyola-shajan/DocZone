@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImg from "../../assets/images/aboutimage.png";
+import AboutImg from "../../assets/images/aboutimg.png";
 
 function AboutHeroSection() {
   return (
@@ -32,11 +32,11 @@ function AboutHeroSection() {
           </p>
         </div>
         <div className="w-full lg:w-1/2 flex items-center justify-center relative">
-          <div className="border-2 border-[#008364] w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 absolute right-0 lg:right-6 rounded-tr-[50px] sm:rounded-tr-[60px] md:rounded-tr-[75px] rounded-md mb-16 sm:mb-20 md:mb-24 mr-0 lg:mr-20"></div>
+          {/* <div className="border-2 border-[#008364] w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 absolute right-0 lg:right-6 rounded-tr-[50px] sm:rounded-tr-[60px] md:rounded-tr-[75px] rounded-md mb-16 sm:mb-20 md:mb-24 mr-0 lg:mr-20"></div> */}
           <img
             src={AboutImg}
             alt="SLIDER IMG"
-            className="w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96 rounded-lg relative z-20 transition-all duration-500 ease-in-out mb-8 sm:mb-10"
+            className="w-72 sm:w-80 md:w-full sm:h-80 md:h-full rounded-lg relative z-20 transition-all duration-500 ease-in-out mb-8 sm:mb-0"
           />
         </div>
       </div>

@@ -50,9 +50,9 @@ function Details() {
       <div className="mt-10 sm:mt-12 relative">
         <img src={conctact2} alt="" className="w-full h-[50dvh] rounded-xl" />
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-[#FFFFFF] px-4 text-center z-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold">Contact Us & Get</h1>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold">in touch with us</h1>
-          <p className="mt-4 text-sm sm:text-base md:text-lg font-light max-w-xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold">Contact Us & Get in touch with us</h1>
+          {/* <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold"></h1> */}
+          <p className="mt-4 text-sm sm:text-base md:text-lg font-light">
             A document clearing and visa services company simplifies complex
             administrative processes for individuals and businesses.
           </p>

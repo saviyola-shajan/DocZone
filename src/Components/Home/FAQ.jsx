@@ -100,7 +100,7 @@ function FAQ() {
               onClick={() => toggleLeftDropdown(index)}
               className="flex justify-between items-center w-full text-left gap-6 sm:gap-10 md:gap-12"
             >
-              <p className="flex-shrink-0 text-[#41BEA1]">{item.num}</p>
+              <p className="flex-shrink-0 text-[#22EEBF]">{item.num}</p>
               <h3 className="text-base sm:text-lg font-semibold text-left flex-1">
                 {item.question}
               </h3>
@@ -109,13 +109,13 @@ function FAQ() {
                   OpenStates[index] ? "rotate-180" : ""
                 }`}
               >
-                <span className="inline-flex justify-center items-center bg-[#41BEA1] p-2 rounded-full">
+                <span className="inline-flex justify-center items-center bg-[#22EEBF] p-2 rounded-full">
                   <FaChevronDown className="w-4 h-4 text-[#000000]" />
                 </span>
               </span>
             </button>
             {OpenStates[index] && (
-              <p className="mt-2 text-sm sm:text-base text-[#FFFFFFCC] transition-all duration-300 ease-in-out">
+              <p className="mt-2 text-sm sm:text-base text-[#FFFFFFCC] transition-all duration-300 ease-in-out max-w-5xl text-justify">
                 {item.answer}
               </p>
             )}

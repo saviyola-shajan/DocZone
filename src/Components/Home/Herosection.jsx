@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight, GoArrowRight } from "react-icons/go";
-import HomeImg from "../../assets/images/homeimg.png";
+import HomeImg from "../../assets/images/HOME IMAGE.jpg";
 import Header from "../Header";
 import { content } from "../Constants/Constant";
 
@@ -17,17 +17,17 @@ function Herosection() {
   }, []);
 
   return (
-    <div className="h-[135svh] md:min-h-screen bg-cover bg-center relative mt-12 md:mt-0">
+    <div className="h-[100svh] md:h-auto bg-cover bg-center relative mt-12 md:mt-0">
       <div className="fixed top-0 left-0 w-full z-50">
         <Header />
       </div>
       <img
         src={HomeImg}
         alt="home img"
-        className="w-full h-full object-cover"
+        className="w-full h-[100lvh] object-cover"
       />
       <div className="absolute inset-0 flex flex-col-reverse lg:flex-row justify-center items-center px-6 sm:px-12 md:px-16 lg:px-24">
-        <div className="w-full lg:w-1/2 mt-10 sm:mt-16 md:mt-20 lg:mt-24">
+        <div className="w-full lg:w-1/2 mt-10 sm:mt-16 md:mt-0">
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-light text-[#FFF] mb-2">
             {content[index].text}
           </p>
@@ -50,7 +50,7 @@ function Herosection() {
             </Link>
             <a
               href="/services"
-              className="text-[#FFFFFF] text-base sm:text-lg font-extralight sm:ml-6 mt-4 sm:mt-0 flex relative group"
+              className="text-[#FFFFFF] text-base sm:text-lg font-extralight sm:ml-6 mt-4 sm:mt-0 relative group flex items-center justify-center"
             >
               Useful Links
               <span>
@@ -61,11 +61,11 @@ function Herosection() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 relative mt-12 lg:mt-20 lg:ml-40 flex justify-center lg:justify-end">
-          <div className=" hidden lg:block border-2 border-white w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 absolute left-4 sm:left-6 lg:left-20 hidden:rounded-tr-[60px] hidden:rounded-bl-[60px] lg:rounded-tr-[75px] lg:rounded-bl-[75px] rounded-md"></div>
+          {/* <div className=" hidden lg:block border-2 border-white w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 absolute left-4 sm:left-6 lg:left-20 hidden:rounded-tr-[60px] hidden:rounded-bl-[60px] lg:rounded-tr-[75px] lg:rounded-bl-[75px] rounded-md"></div> */}
           <img
             src={content[index].image}
             alt="SLIDER IMG"
-            className="w-64 sm:w-80 md:w-96 h-[340px] sm:h-[400px] md:h-[420px] lg:mr-20 rounded-lg relative z-20 mt-6 transition-all duration-500 ease-in-out"
+            className="w-64 sm:w-80 md:w-full h-[340px] sm:h-[400px] md:h-full lg:mr-20 rounded-lg relative z-20 transition-all duration-500 ease-in-out"
           />
         </div>
       </div>

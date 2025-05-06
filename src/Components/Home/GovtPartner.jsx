@@ -41,9 +41,9 @@ function GovtPartner() {
   return (
     <div className="h-auto px-4 sm:px-8 md:px-16 lg:px-24 py-10 md:py-20 text-[#000000] bg-white">
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4">
-        Trusted by Government, Preferred by Clients
+        Trusted by Government,<br/> <span className="font-medium">Preferred by Clients</span>
       </h1>
-      <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-normal mb-12 md:mb-16">
+      <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-normal mb-12 md:mb-8">
         We partner with UAE government authorities to deliver accurate,
         timely services.
       </p>
@@ -76,11 +76,11 @@ function GovtPartner() {
 
         {images.map((imgSrc, index) => (
           <SwiperSlide key={index}>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center bg-black/5 rounded-2xl">
               <img
                 src={imgSrc}
                 alt={`Slide ${index + 1}`}
-                className="max-w-full h-[40vh] object-contain px-6 sm:px-8"
+                className="max-w-full h-[40vh] object-contain px-6 sm:px-8 mix-blend-multiply "
               />
             </div>
           </SwiperSlide>
