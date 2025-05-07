@@ -33,10 +33,10 @@ function Herosection() {
           </p>
           <motion.h1
             key={index} // 👈 this triggers the animation on every change
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-[#FFFFFF] leading-tight"
+            transition={{ duration: 2 }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-[#FFFFFF] leading-tight h-60"
           >
             {content[index].heading.split("\n")[0]} <br />
             {content[index].heading.split("\n")[1]}{" "}
