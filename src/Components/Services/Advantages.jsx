@@ -31,7 +31,7 @@ function Advantages() {
         </div>
         <div className="w-full lg:w-2/3 py-4 px-4 sm:px-8 text-left mt-6 lg:mt-0">
           <h1 className="font-medium text-3xl sm:text-4xl md:text-5xl text-[#FFFFFF]">
-            Advantages Of <span className="text-[#41BEA1]">Joining US</span>
+            Advantages Of <span className="text-[#22EEBF]">Joining US</span>
           </h1>
           <p className="font-light text-base sm:text-lg text-left mt-3">
             At Doczone Dubai, our commitment transcends the mere act of service
@@ -42,7 +42,7 @@ function Advantages() {
             <div className="max-w-full sm:max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-10 sm:gap-y-14 gap-x-6 text-center">
               {features.map((feature, index) => (
                 <div key={index} className="flex flex-col items-center">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-[#41BEA1]">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-[#22EEBF]">
                     {feature.number}
                   </h3>
                   <p className="text-lg sm:text-xl md:text-2xl font-light text-left p-2 sm:p-4">

@@ -280,7 +280,7 @@ function Services() {
   return (
     <div className="min-h-screen p-4 sm:p-8 md:p-16 lg:p-24">
     <h1 className="text-[#07122D] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-left font-semibold">
-      Our Global<span className="text-[#41BEA1]"> Services</span>
+      Our Global<span className="text-[#22EEBF]"> Services</span>
     </h1>
     <p className="mt-4 text-base sm:text-lg md:text-xl font-normal text-justify">
       At Doczone Dubai, our commitment transcends the mere act of service
@@ -297,7 +297,7 @@ function Services() {
               <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#121212] ml-2 sm:ml-4">
                 {service.title1}
               </h1>
-              <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#41BEA1] mb-4 sm:mb-6 ml-2 sm:ml-4">
+              <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#22EEBF] mb-4 sm:mb-6 ml-2 sm:ml-4">
                 {service.title2}
               </h1>
               <img src={service.img} alt="1" className="px-0 sm:px-6" />
@@ -318,7 +318,7 @@ function Services() {
   
           <div className="relative ml-0 sm:ml-24 md:ml-36 lg:ml-52">
             <div className="absolute w-full bg-[linear-gradient(222deg,_rgba(29,44,97,0.80)_-72.39%,_#050F29_76.48%)] z-10 px-4 sm:px-6 py-6 bottom-32 rounded-t-2xl">
-              <div className="bg-[#41BEA1] inline-block px-4 py-2 [clip-path:polygon(0_0,80%_0,100%_100%,0%_100%)] ml-4 sm:ml-6">
+              <div className="bg-[#22EEBF] inline-block px-4 py-2 [clip-path:polygon(0_0,80%_0,100%_100%,0%_100%)] ml-4 sm:ml-6">
                 <h1 className="font-medium text-lg sm:text-xl md:text-2xl text-[#121212]">
                   Our{" "}
                   <span className="text-[#FFFFFF] pr-10 sm:pr-16">
@@ -332,7 +332,7 @@ function Services() {
                     key={processIndex}
                     className="flex flex-col sm:flex-row items-start gap-1 sm:gap-6 mb-2 sm:mb-3"
                   >
-                    <span className="text-[#41BEA1] font-semibold text-sm sm:text-base min-w-full sm:min-w-[210px]">
+                    <span className="text-[#22EEBF] font-semibold text-sm sm:text-base min-w-full sm:min-w-[210px]">
                       {processItem.t1}
                     </span>
                     <span className="text-[#FFFFFF] font-normal">
@@ -344,7 +344,7 @@ function Services() {
   
               <button
                 onClick={() => toggleDropdown(index)}
-                className="absolute left-1/2 -translate-x-1/2 z-10 bottom-[-20px] bg-[#41BEA1] w-12 sm:w-14 h-12 sm:h-14 flex items-center justify-center rounded-full shadow-lg hover:scale-105 transition"
+                className="absolute left-1/2 -translate-x-1/2 z-10 bottom-[-20px] bg-[#22EEBF] w-12 sm:w-14 h-12 sm:h-14 flex items-center justify-center rounded-full shadow-lg hover:scale-105 transition"
               >
                 <span className="text-white font-bold text-lg sm:text-xl">
                   {openDropdowns === index ? <FaArrowUp /> : <FaArrowDown />}

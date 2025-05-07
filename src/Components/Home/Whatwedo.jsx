@@ -24,10 +24,7 @@ function Whatwedo() {
           </p>
         </div>
       </div>
-
-      {/* Main process steps and image section */}
       <div className="flex flex-col lg:flex-row pt-12 md:pt-20 gap-10 lg:pl-16">
-        {/* Steps 01–03 */}
         <div className="space-y-6 w-full lg:w-auto">
           {[
             { num: "01", title: "Prepare", desc: "We help gather and organize your documents." },

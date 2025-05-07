@@ -6,7 +6,7 @@ import { values } from "../Constants/Constant";
 function AboutPillars() {
   return (
     <div className="min-h-screen text-[#FFFFFF] bg-[#050F29] px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24 py-16 sm:py-20 bg-[linear-gradient(222deg,rgba(29,44,97,0.80)_-72.39%,#050F29_76.48%)]">
-      <h1 className="text-[#41BEA1] font-semibold text-3xl sm:text-4xl md:text-5xl">Our Commitment:</h1>
+      <h1 className="text-[#22EEBF] font-semibold text-3xl sm:text-4xl md:text-5xl">Our Commitment:</h1>
       <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl">The Pillars of Doczone Dubai</h1>
       <p className="mt-8 sm:mt-10 font-normal text-base sm:text-lg text-justify">
         At Doczone Dubai, our commitment transcends the mere act of service

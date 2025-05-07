@@ -4,7 +4,7 @@ import { GoArrowUpRight, GoArrowRight } from "react-icons/go";
 import HomeImg from "../../assets/images/HOME IMAGE.jpg";
 import Header from "../Header";
 import { content } from "../Constants/Constant";
-
+import { motion } from "framer-motion";
 function Herosection() {
   const [index, setIndex] = useState(0);
 
@@ -31,13 +31,19 @@ function Herosection() {
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-light text-[#FFF] mb-2">
             {content[index].text}
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-[#FFFFFF] leading-tight">
+          <motion.h1
+            key={index} // 👈 this triggers the animation on every change
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-[#FFFFFF] leading-tight"
+          >
             {content[index].heading.split("\n")[0]} <br />
             {content[index].heading.split("\n")[1]}{" "}
             <span style={{ color: content[index].highlight }}>
               {content[index].heading.split("\n")[2]}
             </span>
-          </h1>
+          </motion.h1>
           <div className="pt-6 sm:pt-8 lg:pt-10 flex flex-col sm:flex-row">
             <Link
               to="/contact"
@@ -61,7 +67,6 @@ function Herosection() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 relative mt-12 lg:mt-20 lg:ml-40 flex justify-center lg:justify-end">
-          {/* <div className=" hidden lg:block border-2 border-white w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 absolute left-4 sm:left-6 lg:left-20 hidden:rounded-tr-[60px] hidden:rounded-bl-[60px] lg:rounded-tr-[75px] lg:rounded-bl-[75px] rounded-md"></div> */}
           <img
             src={content[index].image}
             alt="SLIDER IMG"

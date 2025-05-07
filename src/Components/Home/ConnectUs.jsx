@@ -1,7 +1,7 @@
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import connectUs from "../../assets/images/connectus.jpg";
+import connectUs from "../../assets/images/CONNECT WITH FORM2.jpg";
 
 function ConnectUs() {
   const validationSchema = Yup.object({

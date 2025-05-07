@@ -9,10 +9,10 @@ function Details() {
     <div className="bg-[#FFFFFF] px-4 sm:px-6 md:px-12 lg:px-24 py-10 sm:py-16 lg:py-20 min-h-screen">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
         <div className="bg-[#0D1B40] flex items-start sm:items-center text-white p-4 sm:p-6 rounded-lg shadow-md w-full">
-          <FaMapMarkerAlt className="text-[#41BEA1] text-2xl sm:text-3xl mr-4 sm:mr-6 w-8 sm:w-10 h-8 sm:h-10" />
+          <FaMapMarkerAlt className="text-[#22EEBF] text-2xl sm:text-3xl mr-4 sm:mr-6 w-8 sm:w-10 h-8 sm:h-10" />
           <div className="flex flex-col">
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold text-[#41BEA1]">Location</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-[#22EEBF]">Location</h3>
               <p className="font-medium text-xl sm:text-2xl">Visit Us</p>
             </div>
             <p className="text-base sm:text-lg mt-2 font-light">
@@ -22,10 +22,10 @@ function Details() {
         </div>
 
         <div className="bg-[#0D1B40] flex items-start sm:items-center text-white p-4 sm:p-6 rounded-lg shadow-md w-full">
-          <FaPhoneAlt className="text-[#41BEA1] text-2xl sm:text-3xl mr-4 sm:mr-6 w-7 sm:w-9 h-7 sm:h-9" />
+          <FaPhoneAlt className="text-[#22EEBF] text-2xl sm:text-3xl mr-4 sm:mr-6 w-7 sm:w-9 h-7 sm:h-9" />
           <div className="flex flex-col">
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold text-[#41BEA1]">24/7 Service</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-[#22EEBF]">24/7 Service</h3>
               <p className="font-medium text-xl sm:text-2xl">Contact Us On</p>
             </div>
             <div className="mt-2">
@@ -36,10 +36,10 @@ function Details() {
         </div>
 
         <div className="bg-[#0D1B40] flex items-start sm:items-center text-white p-4 sm:p-6 rounded-lg shadow-md w-full">
-          <FaEnvelope className="text-[#41BEA1] text-2xl sm:text-3xl mr-4 sm:mr-6 w-7 sm:w-9 h-7 sm:h-9" />
+          <FaEnvelope className="text-[#22EEBF] text-2xl sm:text-3xl mr-4 sm:mr-6 w-7 sm:w-9 h-7 sm:h-9" />
           <div className="flex flex-col">
             <div>
-              <h3 className="text-lg sm:text-xl font-semibold text-[#41BEA1]">Drop a Mail</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-[#22EEBF]">Drop a Mail</h3>
               <p className="font-medium text-xl sm:text-2xl">Mail Address</p>
             </div>
             <p className="text-base sm:text-lg font-light mt-2">info@secondsoleit.com</p>

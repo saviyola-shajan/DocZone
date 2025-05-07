@@ -19,7 +19,7 @@ function WhatMakesUsBest() {
         <h1 className="font-semibold text-5xl sm:text-7xl md:text-8xl mt-2 mb-8">The Best</h1>
         <Link
           to="/contact"
-          className="group relative transition-all duration-300 text-[#000000] text-base sm:text-lg px-6 py-3 rounded-full bg-[#41BEA1] font-medium flex items-center justify-between mx-auto w-[80%] sm:w-[60%] md:w-[65%]"
+          className="group relative transition-all duration-300 text-[#000000] text-base sm:text-lg px-6 py-3 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between mx-auto w-[80%] sm:w-[60%] md:w-[65%]"
         >
           Connect With Us
           <span className="w-9 h-9 flex items-center justify-center bg-[#ffffff] rounded-full">
@@ -33,7 +33,7 @@ function WhatMakesUsBest() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {services.slice(0, 3).map((service, index) => (
               <div key={index} className="bg-[#FFFFFF1A] p-6 rounded-lg backdrop-blur-md flex flex-col items-center text-center">
-                <div className="text-3xl text-[#41BEA1] mb-2 w-8 h-8">{service.icon}</div>
+                <div className="text-3xl text-[#22EEBF] mb-2 w-8 h-8">{service.icon}</div>
                 <p className="text-base text-[#FFFFFF]">{service.text}</p>
               </div>
             ))}
@@ -42,7 +42,7 @@ function WhatMakesUsBest() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 ">
             {services.slice(3, 5).map((service, index) => (
               <div key={index} className="bg-[#FFFFFF1A] p-6 sm:p-7 rounded-lg backdrop-blur-md flex flex-col items-center text-center">
-                <div className="text-3xl text-[#41BEA1] mb-2 w-8 h-8">{service.icon}</div>
+                <div className="text-3xl text-[#22EEBF] mb-2 w-8 h-8">{service.icon}</div>
                 <p className="text-base text-[#FFFFFF]">{service.text}</p>
               </div>
             ))}

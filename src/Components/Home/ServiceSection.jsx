@@ -16,13 +16,13 @@ function ServiceSection() {
       <div className="absolute right-4 sm:right-8 md:right-24 lg:right-32 mt-36 flex space-x-4 z-20">
         <button
           ref={prevRef}
-          className="bg-[#41BEA1] text-[#000000] p-2 sm:p-3 rounded-full"
+          className="bg-[#22EEBF] text-[#000000] p-2 sm:p-3 rounded-full"
         >
           <FaChevronLeft className="h-4 w-4 md:h-6 md:w-6 rounded-full" />
         </button>
         <button
           ref={nextRef}
-          className="bg-[#41BEA1] text-[#000000] p-2 sm:p-3 rounded-full"
+          className="bg-[#22EEBF] text-[#000000] p-2 sm:p-3 rounded-full"
         >
           <FaChevronRight className="h-4 w-4 md:h-6 md:w-6 rounded-full" />
         </button>
@@ -62,7 +62,7 @@ function ServiceSection() {
         >
           {settings.map((service, index) => (
             <SwiperSlide key={index} className="p-2 sm:p-4">
-              <div className="relative rounded-3xl border border-[#41BEA1] shadow-lg overflow-hidden">
+              <div className="relative rounded-3xl border border-[#22EEBF] shadow-lg overflow-hidden">
                 <img
                   src={service.image}
                   alt=""
@@ -71,7 +71,7 @@ function ServiceSection() {
                 <div className="absolute inset-0 flex flex-col p-4 sm:p-6 md:p-10 z-10">
                   <div className="flex items-center">
                     <span className="w-8 sm:w-10 border-t-2 border-gray-700 mr-3"></span>
-                    <p className="text-[#41BEA1] text-sm sm:text-base">
+                    <p className="text-[#22EEBF] text-sm sm:text-base">
                       {service.num}
                     </p>
                   </div>
