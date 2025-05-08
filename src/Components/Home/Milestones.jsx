@@ -13,10 +13,10 @@ function Milestones() {
           </p>
           <Link
             to="/contact"
-            className="group relative transition-all duration-300 text-[#000000] text-base sm:text-lg md:text-xl px-6 py-3 rounded-full bg-[#22EEBF] font-semibold flex items-center justify-between gap-4 sm:gap-6 w-fit"
+            className="group relative transition-all duration-300 text-[#000000] text-base sm:text-lg md:text-xl px-6 py-3 rounded-full bg-[#22EEBF] border border-[#22EEBF] hover:bg-[#ffffff] font-semibold flex items-center justify-between gap-4 sm:gap-6 w-fit"
           >
             Know More
-            <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full">
+            <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] group-hover:bg-[#22EEBF] rounded-full">
               <GoArrowUpRight className="text-black text-lg w-6 h-6" />
             </span>
           </Link>
@@ -33,10 +33,10 @@ function Milestones() {
           </p>
           <Link
             to="/contact"
-            className="group relative transition-all duration-300 text-[#000000] text-base sm:text-lg md:text-xl px-6 py-3 rounded-full bg-[#22EEBF] font-semibold flex items-center justify-between w-full sm:w-[75%] md:w-[62%]"
+            className="group relative transition-all duration-300 text-[#000000] border border-[#22EEBF] hover:bg-[#ffffff] text-base sm:text-lg md:text-xl px-6 py-3 rounded-full bg-[#22EEBF] font-semibold flex items-center justify-between w-full sm:w-[75%] md:w-[62%]"
           >
             Connect With Us
-            <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full">
+            <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] group-hover:bg-[#22EEBF] rounded-full">
               <GoArrowUpRight className="text-black text-lg w-6 h-6" />
             </span>
           </Link>

@@ -29,31 +29,38 @@ function AboutPillars() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-16 lg:gap-20 px-2 sm:px-6 md:px-10 py-12 sm:py-16">
-        {values.map((value, index) => (
-          <div
-            key={index}
-            className="relative bg-white text-black rounded-3xl py-6 sm:py-8 px-6 sm:px-12 shadow-lg border border-[#008364]"
-          >
-            <div className="text-6xl sm:text-7xl md:text-8xl font-medium text-[#006D54] flex gap-6 sm:gap-10">
-              {value.number}
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#000000] mt-1 sm:mt-2 text-right">
-                {value.title}
-              </h3>
-            </div>
-            <p className="text-[#000000] font-normal text-base sm:text-lg mt-2">
-              {value.description}
-            </p>
-          </div>
-        ))}
+  {values.map((value, index) => (
+    <div
+      key={index}
+      className="relative bg-white text-black rounded-3xl py-6 sm:py-8 px-6 sm:px-12 shadow-lg border border-[#008364]"
+    >
+      <div className="text-6xl sm:text-7xl md:text-8xl font-medium flex gap-6 sm:gap-10">
+        <span
+          className={`${
+            index === 0 || index === 3 ? 'text-[#22EEBF]' : 'text-[#006D54]'
+          }`}
+        >
+          {value.number}
+        </span>
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#000000] mt-1 sm:mt-2 text-right">
+          {value.title}
+        </h3>
       </div>
+      <p className="text-[#000000] font-normal text-base sm:text-lg mt-2">
+        {value.description}
+      </p>
+    </div>
+  ))}
+</div>
+
 
       <div className="items-center justify-center flex">
         <Link
           to="/contact"
-          className="group relative transition-all duration-300 text-[#000000] text-base sm:text-lg px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[70%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%]"
+          className="group relative transition-all duration-300 text-[#000000] border border-[#22EEBF] hover:bg-[#ffffff] text-base sm:text-lg px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[70%] sm:w-[50%] md:w-[40%] lg:w-[30%] xl:w-[25%]"
         >
           Connect With Us
-          <span className="w-8 sm:w-9 h-8 sm:h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full">
+          <span className="w-8 sm:w-9 h-8 sm:h-9 flex items-center justify-center bg-[#FFFFFF] group-hover:bg-[#22EEBF]  rounded-full">
             <GoArrowUpRight className="text-black text-lg w-5 sm:w-6 h-5 sm:h-6" />
           </span>
         </Link>

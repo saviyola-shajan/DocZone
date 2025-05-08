@@ -13,7 +13,7 @@ function ServiceSection() {
 
   return (
     <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-10 sm:py-16 md:py-20 h-auto lg:min-h-screen relative">
-      <div className="absolute right-4 sm:right-8 md:right-24 lg:right-32 mt-36 flex space-x-4 z-20">
+      <div className="hidden md:flex absolute right-4 sm:right-8 md:right-24 lg:right-32 mt-36 space-x-4 z-20">
         <button
           ref={prevRef}
           className="bg-[#22EEBF] text-[#000000] p-2 sm:p-3 rounded-full"

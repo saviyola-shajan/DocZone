@@ -105,7 +105,7 @@ function GetIntouch() {
 
             <button
               type="submit"
-              className="bg-[#41BEA1] text-[#000000] text-xl sm:text-2xl font-semibold px-8 py-2 rounded-xl"
+              className="bg-[#22EEBF] hover:bg-[#ffffff] border border-[#22EEBF] text-[#000000] text-xl sm:text-2xl font-semibold px-8 py-2 rounded-xl"
             >
               Submit
             </button>

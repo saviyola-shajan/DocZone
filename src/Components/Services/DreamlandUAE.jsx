@@ -22,10 +22,10 @@ function DreamlandUAE() {
       </p>
       <Link
         to="/contact"
-        className="group relative transition-all mt-6 sm:mt-8 duration-300 text-[#000000] text-sm sm:text-base md:text-lg px-4 sm:px-6 py-3 rounded-full bg-[#FFFFFF] font-medium flex items-center justify-between w-[80%] sm:w-[60%] md:w-[40%] lg:w-[30%] xl:w-[24%]"
+        className="group relative transition-all mt-6 sm:mt-8 border border-[#22EEBF] hover:bg-[#ffffff]  duration-300 text-[#000000] text-sm sm:text-base md:text-lg px-4 sm:px-6 py-3 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[80%] sm:w-[60%] md:w-[40%] lg:w-[30%] xl:w-[24%]"
       >
         Connect With Us
-        <span className="w-8 sm:w-9 h-8 sm:h-9 flex items-center justify-center bg-[#22EEBF] rounded-full ml-2">
+        <span className="w-8 sm:w-9 h-8 sm:h-9 flex items-center justify-center bg-[#FFFFFF] group-hover:bg-[#22EEBF] rounded-full ml-2">
           <GoArrowUpRight className="text-black text-base sm:text-lg w-5 sm:w-6 h-5 sm:h-6" />
         </span>
       </Link>

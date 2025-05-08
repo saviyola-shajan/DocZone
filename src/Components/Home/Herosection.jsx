@@ -47,10 +47,10 @@ function Herosection() {
           <div className="pt-6 sm:pt-8 lg:pt-10 flex flex-col sm:flex-row">
             <Link
               to="/contact"
-              className="group relative transition-all duration-300 text-[#000000] text-base sm:text-lg px-6 py-3 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-full sm:w-[60%] md:w-[50%]"
+              className="group relative transition-all duration-300 text-[#000000] text-base border-2 border-[#22EEBF] sm:text-lg px-6 py-3 rounded-full bg-[#22EEBF] hover:bg-[#ffffff] font-medium flex items-center justify-between w-full sm:w-[60%] md:w-[50%]"
             >
               Connect With Us
-              <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full ml-2">
+              <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] group-hover:bg-[#22EEBF] rounded-full ml-2">
                 <GoArrowUpRight className="text-black text-lg w-6 h-6" />
               </span>
             </Link>

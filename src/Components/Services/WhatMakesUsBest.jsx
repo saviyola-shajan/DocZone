@@ -19,10 +19,10 @@ function WhatMakesUsBest() {
         <h1 className="font-semibold text-5xl sm:text-7xl md:text-8xl mt-2 mb-8">The Best</h1>
         <Link
           to="/contact"
-          className="group relative transition-all duration-300 text-[#000000] text-base sm:text-lg px-6 py-3 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between mx-auto w-[80%] sm:w-[60%] md:w-[65%]"
+          className="group relative transition-all duration-300 text-[#000000] border border-[#22EEBF] hover:bg-[#ffffff] text-base sm:text-lg px-6 py-3 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between mx-auto w-[80%] sm:w-[60%] md:w-[65%]"
         >
           Connect With Us
-          <span className="w-9 h-9 flex items-center justify-center bg-[#ffffff] rounded-full">
+          <span className="w-9 h-9 flex items-center justify-center bg-[#ffffff] rounded-full group-hover:bg-[#22EEBF]">
             <GoArrowUpRight className="text-black text-lg w-6 h-6" />
           </span>
         </Link>

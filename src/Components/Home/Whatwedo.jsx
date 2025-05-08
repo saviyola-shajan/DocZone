@@ -1,6 +1,33 @@
 import React from "react";
 import Image from "../../assets/images/PROCESS.jpg";
+import { motion } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
+const steps = [
+  { num: "01", title: "Prepare", desc: "We help gather and organize your documents." },
+  { num: "02", title: "Verify", desc: "Multi-step checks ensure accuracy and security." },
+  { num: "03", title: "Submit", desc: "Experts handle government submissions for you." },
+];
+
+// Animation variants
+const container = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.4, // Delay between each card
+    },
+  },
+};
+
+const cardVariant = {
+  hidden: { backgroundColor: "rgba(90,137,253,0.15)" }, // initial background
+  show: {
+    backgroundColor: "rgba(34,238,191,0.2)", // pale green
+    transition: {
+      duration: 0.6,
+      yoyo: 1, // go back to original
+    },
+  },
+};
 
 function Whatwedo() {
   return (
@@ -25,29 +52,31 @@ function Whatwedo() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row pt-12 md:pt-20 gap-10 lg:pl-16">
-        <div className="space-y-6 w-full lg:w-auto">
-          {[
-            { num: "01", title: "Prepare", desc: "We help gather and organize your documents." },
-            { num: "02", title: "Verify", desc: "Multi-step checks ensure accuracy and security." },
-            { num: "03", title: "Submit", desc: "Experts handle government submissions for you." }
-          ].map((step, index) => (
-            <div
-              key={index}
-              className="bg-[#5A89FD26] px-4 py-2 rounded-2xl w-full sm:w-96 h-auto min-h-[140px] text-white flex items-center justify-between"
-            >
-              <div className="flex items-center">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-normal">{step.num}</div>
-                <div className="ml-4">
-                  <h3 className="font-medium text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2">{step.title}</h3>
-                  <p className="text-sm sm:text-base md:text-lg font-light">{step.desc}</p>
-                </div>
-              </div>
-              <a href="/contact" className="bg-[#22EEBF] p-2 rounded-full shrink-0 ml-4">
-                <GoArrowUpRight className="text-[#000000] w-6 h-6" />
-              </a>
+      <motion.div
+      className="space-y-6 w-full lg:w-auto"
+      variants={container}
+      initial="hidden"
+      animate="show"
+    >
+      {steps.map((step, index) => (
+        <motion.div
+          key={index}
+          variants={cardVariant}
+          className="px-4 py-2 rounded-2xl w-full sm:w-96 min-h-[140px] text-white flex items-center justify-between shadow"
+        >
+          <div className="flex items-center">
+            <div className="text-3xl sm:text-4xl md:text-5xl font-normal">{step.num}</div>
+            <div className="ml-4">
+              <h3 className="font-medium text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2">{step.title}</h3>
+              <p className="text-sm sm:text-base md:text-lg font-light">{step.desc}</p>
             </div>
-          ))}
-        </div>
+          </div>
+          <a href="/contact" className="bg-[#22EEBF] hover:bg-[#ffffff] p-2 rounded-full shrink-0 ml-4">
+            <GoArrowUpRight className="text-[#000000] w-6 h-6" />
+          </a>
+        </motion.div>
+      ))}
+    </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-6 w-full lg:w-auto">
           <div className="hidden md:block w-full lg:w-72 h-auto sm:h-[480px]">
@@ -69,7 +98,7 @@ function Whatwedo() {
                   </p>
                 </div>
               </div>
-              <a href="/contact" className="bg-[#22EEBF] p-2 rounded-full ml-4">
+              <a href="/contact" className="bg-[#22EEBF] hover:bg-[#ffffff] p-2 rounded-full ml-4">
                 <GoArrowUpRight className="text-[#000000] w-6 h-6" />
               </a>
             </div>
@@ -84,7 +113,7 @@ function Whatwedo() {
                   </p>
                 </div>
               </div>
-              <a href="/contact" className="bg-[#22EEBF] p-2 rounded-full ml-4">
+              <a href="/contact" className="bg-[#22EEBF] hover:bg-[#ffffff]  p-2 rounded-full ml-4">
                 <GoArrowUpRight className="text-[#000000] w-6 h-6" />
               </a>
             </div>

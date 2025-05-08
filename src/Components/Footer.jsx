@@ -187,10 +187,10 @@ const Footer = () => {
             </li>
             <Link
               to="/contact"
-              className="group relative transition-all duration-300 text-[#000000] text-lg px-4 py-2 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[60%] mx-auto sm:mx-0 mt-10"
+              className="group relative transition-all duration-300 text-[#000000] border-[#22EEBF] hover:bg-[#ffffff] text-lg px-4 py-2 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[60%] mx-auto sm:mx-0 mt-10"
             >
               Connect Us
-              <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full">
+              <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] group-hover:bg-[#22EEBF]  rounded-full">
                 <GoArrowUpRight className="text-black text-lg w-6 h-6" />
               </span>
             </Link>

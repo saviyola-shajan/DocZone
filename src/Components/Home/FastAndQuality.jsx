@@ -41,10 +41,10 @@ function FastAndQuality() {
         <div>
           <Link
             to="/contact"
-            className="group relative transition-all text-center duration-300 text-[#000000] text-lg px-4 py-2 mt-6 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[70%] sm:w-[50%] md:w-[40%] lg:w-[30%]"
+            className="group relative transition-all text-center border border-[#22EEBF] hover:bg-[#ffffff]  duration-300 text-[#000000] text-lg px-4 py-2 mt-6 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[70%] sm:w-[50%] md:w-[40%] lg:w-[30%]"
           >
             Connect Us
-            <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full">
+            <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full group-hover:bg-[#22EEBF] ">
               <GoArrowUpRight className="text-black text-lg w-6 h-6" />
             </span>
           </Link>

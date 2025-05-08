@@ -30,9 +30,10 @@ function ConnectUs() {
 
   return (
     <div className="min-h-screen px-4 sm:px-10 md:px-16 lg:px-20 xl:px-24 py-10 sm:py-16 md:py-24 flex flex-col lg:flex-row">
-      <div className="w-full lg:w-1/2 flex justify-center items-center mb-10 lg:mb-0">
-        <img src={connectUs} alt="contact" className="max-w-full h-auto" />
+      <div className="w-full lg:w-1/2 flex justify-center items-center mb-10 lg:mb-0 rounded-xl overflow-hidden">
+        <img src={connectUs} alt="contact" className="max-w-full h-auto rounded-xl" />
       </div>
+
       <div className="w-full lg:w-1/2 px-2 sm:px-6 text-white mt-4 lg:mt-8">
         <h1 className="text-2xl sm:text-3xl font-medium mb-6">
           Connect With Us For More Enquiry
@@ -102,7 +103,7 @@ function ConnectUs() {
           </div>
           <button
             type="submit"
-            className="w-[60%] sm:w-[40%] bg-[#22EEBF] text-[#000000] text-xl font-medium py-2 rounded-full text-center justify-center items-center"
+            className="w-[60%] sm:w-[40%] bg-[#22EEBF] hover:bg-[#ffffff] text-[#000000] text-xl font-medium py-2 rounded-full text-center justify-center items-center"
           >
             Submit
           </button>
