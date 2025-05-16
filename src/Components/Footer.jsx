@@ -53,8 +53,8 @@ const Footer = () => {
             Address
           </h1>
           <p className="mt-4 mb-4 sm:mb-6 text-[#FFFFFF99] text-lg sm:text-xl font-500 tracking-[0.40px]">
-            Near Naif Post Office <br />
-            AL Nakhal - Deira Dubai{" "}
+          Doc Zone Documents Clearing Services LLC - Deira
+          Close to Naif Post Office - Al Nakhal Rd - behind Phoenix Hotel - Deira - Dubai
           </p>
         </div>
 
@@ -138,10 +138,10 @@ const Footer = () => {
                 <FaPhoneVolume />
               </p>
               <a
-                href="tel:+919072946664"
+                href="tel:+971545840594"
                 className="text-[#FFFFFF] hover:underline"
               >
-                0545840594
+                +971545840594
               </a>
             </li>
             <li className="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
@@ -149,22 +149,22 @@ const Footer = () => {
                 <FaPhoneVolume />
               </p>
               <a
-                href="https://wa.me/919072946664"
+                href="https://wa.me/+971545840594"
                 className="text-[#FFFFFF] hover:underline"
               >
-                043302526
+                +971545840594
               </a>
             </li>
             <li className="flex justify-center sm:justify-start space-x-4 mt-6">
               <a
-                href="https://www.facebook.com/IPCSTechnologies"
+                href="https://www.facebook.com/share/16Q6BYPKj8/?mibextid=wwXIfr "
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaFacebook className="w-8 h-8 text-[#FFFFFF]" />
               </a>
               <a
-                href="https://www.instagram.com/ipcstechnologies"
+                href="https://www.instagram.com/doczone.dubai?igsh=NHR6Z2V0bXczanBs "
                 target="_blank"
                 rel="noopener noreferrer"
               >

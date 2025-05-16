@@ -64,7 +64,7 @@ function Header() {
 
       {/* Mobile Header */}
       <header
-        className={`md:hidden fixed top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-50 transition-all duration-300 ${
+        className={`md:hidden  fixed top-0 left-0 w-full flex justify-between items-center px-6 py-2 z-50 transition-all duration-300 ${
           isScrolled || location.pathname !== "/" ? "bg-customBg shadow-lg" : "bg-transparent"
         }`}
       >
@@ -75,7 +75,7 @@ function Header() {
           {mobileMenuOpen ? <RxCross2 className="text-white h-6 w-6" /> : <GiHamburgerMenu className="text-white h-6 w-6" />}
         </button>
         {mobileMenuOpen && (
-          <div className="absolute top-16 left-0 w-full bg-customBg text-white px-6 py-4 shadow-md transition-all duration-300 rounded-b-lg">
+          <div className="absolute top-12 left-0 w-full bg-customBg text-white px-6 py-4 shadow-md transition-all duration-300 rounded-b-lg">
             <ul className="space-y-4">
               {navLinks.map((navItem) => (
                 <li key={navItem}>

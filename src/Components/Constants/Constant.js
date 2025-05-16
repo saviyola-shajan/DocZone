@@ -5,7 +5,7 @@ import Home4 from "../../assets/images/home4.png";
  export const content = [
     {
       text: "Your Documents,",
-      heading: "Cleared with Trust and Precision",
+      heading: " Cleared with Trust and Precision ",
       highlight: "#22EEBF",
       image: Home1,
     },

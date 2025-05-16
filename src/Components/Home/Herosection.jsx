@@ -5,6 +5,7 @@ import HomeImg from "../../assets/images/HOME IMAGE.jpg";
 import Header from "../Header";
 import { content } from "../Constants/Constant";
 import { motion } from "framer-motion";
+
 function Herosection() {
   const [index, setIndex] = useState(0);
 
@@ -17,26 +18,32 @@ function Herosection() {
   }, []);
 
   return (
-    <div className="h-[100svh] md:h-auto bg-cover bg-center relative mt-12 md:mt-0">
+    <div className="min-h-screen bg-cover bg-center relative mt-12 md:mt-0">
+      {/* Fixed Header */}
       <div className="fixed top-0 left-0 w-full z-50">
         <Header />
       </div>
+  
+      {/* Background Image */}
       <img
         src={HomeImg}
         alt="home img"
-        className="w-full h-[100lvh] object-cover"
+        className="w-full h-screen object-cover"
       />
-      <div className="absolute inset-0 flex flex-col-reverse lg:flex-row justify-center items-center px-6 sm:px-12 md:px-16 lg:px-24">
-        <div className="w-full lg:w-1/2 mt-10 sm:mt-16 md:mt-0">
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-light text-[#FFF] mb-2">
+  
+      {/* Desktop View */}
+      <div className="hidden lg:flex absolute inset-0 flex-row justify-center items-center px-4 sm:px-8 md:px-12 lg:px-24 pt-20 md:pt-24">
+        {/* Left Side */}
+        <div className="w-full lg:w-1/2">
+          <p className="text-lg lg:text-2xl font-light text-white mb-2">
             {content[index].text}
           </p>
           <motion.h1
-            key={index} // 👈 this triggers the animation on every change
+            key={index}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 2 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-[#FFFFFF] leading-tight h-60"
+            className="text-4xl lg:text-6xl font-semibold text-white leading-tight min-h-[14rem]"
           >
             {content[index].heading.split("\n")[0]} <br />
             {content[index].heading.split("\n")[1]}{" "}
@@ -44,38 +51,91 @@ function Herosection() {
               {content[index].heading.split("\n")[2]}
             </span>
           </motion.h1>
-          <div className="pt-6 sm:pt-8 lg:pt-10 flex flex-col sm:flex-row">
+  
+          {/* Buttons */}
+          <div className="pt-10 flex gap-6">
             <Link
               to="/contact"
-              className="group relative transition-all duration-300 text-[#000000] text-base border-2 border-[#22EEBF] sm:text-lg px-6 py-3 rounded-full bg-[#22EEBF] hover:bg-[#ffffff] font-medium flex items-center justify-between w-full sm:w-[60%] md:w-[50%]"
+              className="group transition-all duration-300 text-black border-2 border-[#22EEBF] px-6 py-3 rounded-full bg-[#22EEBF] hover:bg-white font-medium flex items-center justify-between w-[60%]"
             >
               Connect With Us
-              <span className="w-9 h-9 flex items-center justify-center bg-[#FFFFFF] group-hover:bg-[#22EEBF] rounded-full ml-2">
+              <span className="w-9 h-9 flex items-center justify-center bg-white group-hover:bg-[#22EEBF] rounded-full ml-2">
                 <GoArrowUpRight className="text-black text-lg w-6 h-6" />
               </span>
             </Link>
             <a
               href="/services"
-              className="text-[#FFFFFF] text-base sm:text-lg font-extralight sm:ml-6 mt-4 sm:mt-0 relative group flex items-center justify-center"
+              className="text-white font-light relative group flex items-center"
             >
               Useful Links
-              <span>
-                <GoArrowRight className="w-5 h-5 ml-2 mt-1" />
-              </span>
+              <GoArrowRight className="w-5 h-5 ml-2" />
               <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
             </a>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 relative mt-12 lg:mt-20 lg:ml-40 flex justify-center lg:justify-end">
+  
+        {/* Right Side Image */}
+        <div className="w-full lg:w-1/2 flex justify-end">
           <img
             src={content[index].image}
             alt="SLIDER IMG"
-            className="w-64 sm:w-80 md:w-full h-[340px] sm:h-[400px] md:h-full lg:mr-20 rounded-lg relative z-20 transition-all duration-500 ease-in-out"
+            className="w-[75%] max-w-lg rounded-lg z-20"
+          />
+        </div>
+      </div>
+  
+      {/* Mobile View */}
+      <div className="lg:hidden absolute inset-0 px-6 pt-8 flex flex-col items-center text-center">
+        <p className="text-base sm:text-lg text-white mb-2">
+          {content[index].text}
+        </p>
+        <motion.h1
+          key={index}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          className="text-3xl sm:text-4xl font-semibold text-white leading-snug"
+        >
+          {content[index].heading.split("\n")[0]} <br />
+          {content[index].heading.split("\n")[1]}{" "}
+          <span style={{ color: content[index].highlight }}>
+            {content[index].heading.split("\n")[2]}
+          </span>
+        </motion.h1>
+  
+        {/* Buttons */}
+        <div className="mt-6 w-full flex flex-col items-center gap-4">
+          <Link
+            to="/contact"
+            className="group transition-all duration-300 text-black border-2 border-[#22EEBF] px-6 py-3 rounded-full bg-[#22EEBF] hover:bg-white font-medium flex items-center justify-between w-full max-w-xs"
+          >
+            Connect With Us
+            <span className="w-6 h-6 md:w-9 md:h-9 flex items-center justify-center bg-white group-hover:bg-[#22EEBF] rounded-full ml-2">
+              <GoArrowUpRight className="text-black text-lg w-6 h-6" />
+            </span>
+          </Link>
+          <a
+            href="/services"
+            className="text-white text-sm font-light relative group flex items-center justify-center"
+          >
+            Useful Links
+            <GoArrowRight className="w-5 h-5 ml-2" />
+            <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+          </a>
+        </div>
+  
+        {/* Image at bottom */}
+        <div className="mt-8">
+          <img
+            src={content[index].image}
+            alt="SLIDER IMG"
+            className="w-60 sm:w-72 md:w-80 rounded-lg"
           />
         </div>
       </div>
     </div>
   );
+  
 }
 
 export default Herosection;

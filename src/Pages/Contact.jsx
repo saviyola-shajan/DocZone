@@ -4,6 +4,7 @@ import Footer from '../Components/Footer'
 import Header from "../Components/Header"
 import GetIntouch from '../Components/Contact/GetIntouch'
 import Details from '../Components/Contact/Details'
+import LocationMap from '../Components/Contact/LocationMap'
 function Contact() {
   return (
     <div>
@@ -13,6 +14,7 @@ function Contact() {
       <HeroContact/>
       <GetIntouch/>
       <Details/>
+      <LocationMap/>
     </div>
   )
 }

@@ -2,19 +2,18 @@ import React from "react";
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 
 const services = [
-  "International Visa and Passport Services",
-  "Emirates Health Services",
-  "Dubai Insurance Services",
-  "Customer Happiness Centers",
-  "Dubai Medical Fitness Centers",
-  "Unified Number Inquiry Service",
-  "Fines Inquiry and Payment",
-  "Zajel: Track your shipment",
-  "EHS Medical Fitness Centers",
-  "Digital ID Log-In",
-  "MOHRE Inquiry Services",
-  "Fines Inquiry Service",
+  { name: "International Visa and Passport Services", link: "https://www.blsindiavisa-uae.com/appointmentbls/appointment.php " },
+  { name: "Emirates Health Services", link: "https://dubaihealth.ae/medical-fitness-centers" },
+  { name: "Dubai Insurance Services", link: "https://www.iloe.ae/" },
+  { name: "Customer Happiness Centers", link: "/services/customer-happiness" },
+  { name: "Dubai Medical Fitness Centers", link: "/services/medical-fitness" },
+  { name: "Unified Number Inquiry Service", link: "https://gdrfad.gov.ae/en/unified-number-inquiry-service" },
+  { name: "Fines Inquiry and Payment", link: "https://gdrfad.gov.ae/en/fines-inquiry-service" },
+  { name: "Zajel: Track your shipment", link: "https://zajel.com/" },
+  { name: "EHS Medical Fitness Centers", link: "https://www.ehs.gov.ae/en/services/services-directory/examination-of-medical-fitness-for-residency-visa" },
+  { name: "MOHRE Inquiry Services", link: "https://inquiry.mohre.gov.ae/" },
 ];
+
 
 function UsefulLimks() {
   return (
@@ -31,25 +30,32 @@ function UsefulLimks() {
         relationships, cultivating trust, and guaranteeing that each encounter
         with our clients is marked by a sense of value and satisfaction.
       </p>
-      <div className="max-w-6xl mx-auto py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-[linear-gradient(222deg,_rgba(29,44,97,0.8)_-72.39%,_#050F29_76.48%)] text-white p-4 sm:p-6 rounded-lg shadow-lg text-center"
-            >
-              <h3 className="text-base sm:text-lg md:text-xl font-normal mb-4 sm:mb-6">{service}</h3>
-              <a
-                href="#"
-                className="flex items-center justify-center gap-2 bg-white text-[#121E41] text-sm sm:text-base px-4 py-2 rounded-full font-medium transition hover:bg-gray-200"
-              >
-                Visit Now
-                <LuSquareArrowOutUpRight className="text-[#0037CD]" />
-              </a>
-            </div>
-          ))}
+      <div className="max-w-7xl mx-auto py-10 space-y-4">
+      {services.map((service, index) => (
+        <div
+          key={index}
+          className={`flex items-center justify-between px-6 py-4 rounded-lg ${
+            index % 2 === 0 ? "bg-[#22EEBF] text-white" : "bg-black text-white"
+          }`}
+        >
+          <h3 className="text-base sm:text-lg md:text-xl font-medium">
+            {service.name}
+          </h3>
+          <a
+            href={service.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium text-sm sm:text-base transition ${
+              index % 2 === 0
+                ? "bg-white text-black "
+                : "bg-white text-black"
+            }`}
+          >
+            Visit Site <LuSquareArrowOutUpRight />
+          </a>
         </div>
-      </div>
+      ))}
+    </div>
     </div>
   );
 }

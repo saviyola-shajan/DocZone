@@ -289,7 +289,7 @@ function Services() {
       with our clients is marked by a sense of value and satisfaction.
     </p>
   
-    <div className="my-12 sm:my-16 md:my-24">
+    <div className="my-12 sm:my-16 md:my-24 hidden md:block">
       {slidesData.map((service, index) => (
         <React.Fragment key={index}>
           <div className="flex flex-col lg:flex-row mb-12 lg:mb-24">
@@ -365,6 +365,69 @@ function Services() {
         </React.Fragment>
       ))}
     </div>
+    {/* Mobile View: Only shown on small devices (below md) */}
+<div className="block md:hidden my-12 px-4">
+  {slidesData.map((service, index) => (
+    <div key={index} className="mb-16">
+      {/* Image and Titles */}
+      <img src={service.img} alt="service" className="rounded-xl mb-6" />
+      <h1 className="text-[#006D54] text-3xl font-bold">{service.num}</h1>
+      <h2 className="text-[#121212] text-2xl font-semibold mt-2">
+        {service.title1}
+      </h2>
+      <h2 className="text-[#22EEBF] text-2xl font-semibold mb-4">
+        {service.title2}
+      </h2>
+      <p className="text-[#000000] text-justify text-base mb-6">
+        {service.description}
+      </p>
+
+      {/* Process Box */}
+      <div className="bg-gradient-to-br from-[#1D2C61CC] to-[#050F29] text-white rounded-t-2xl px-5 py-6">
+        <div className="bg-[#22EEBF] inline-block px-4 py-2 [clip-path:polygon(0_0,80%_0,100%_100%,0%_100%)] mb-6">
+          <h1 className="text-[#121212] font-semibold text-lg">
+            Our <span className="text-white">{service.heading}</span>
+          </h1>
+        </div>
+
+        {service.process.map((processItem, processIndex) => (
+          <div
+            key={processIndex}
+            className="mb-3 flex flex-col"
+          >
+            <span className="text-[#22EEBF] font-semibold text-sm">
+              {processItem.t1}
+            </span>
+            <span className="text-white text-sm">
+              : {processItem.p1}
+            </span>
+          </div>
+        ))}
+
+        {/* Toggle Dropdown Arrow */}
+        <button
+          onClick={() => toggleDropdown(index)}
+          className="mx-auto mt-6 bg-[#22EEBF] w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:scale-105 transition"
+        >
+          <span className="text-white text-xl">
+            {openDropdowns === index ? <FaArrowUp /> : <FaArrowDown />}
+          </span>
+        </button>
+
+        {/* Dropdown Section */}
+        <div
+          className={`mt-6 bg-white text-[#121212] text-sm px-4 py-6 rounded-b-lg transition-all duration-300 ${
+            openDropdowns === index
+              ? "opacity-100 max-h-[500px]"
+              : "opacity-0 max-h-0 overflow-hidden"
+          }`}
+        >
+          <p className="text-justify line-clamp-[14]">{service.dropdown}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
   </div>
   
   );

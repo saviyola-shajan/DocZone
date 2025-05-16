@@ -5,7 +5,6 @@ import Services8 from "../Components/Services/Services8"
 import DreamlandUAE from '../Components/Services/DreamlandUAE'
 import UsefulLinks from '../Components/Services/UsefulLinks'
 import ServicesHero from '../Components/Services/ServicesHero'
-import ServiceAdvantages from '../Components/Services/ServiceAdvantages'
 function Services() {
   return (
     <div className='bg-[#FFFFFF]'>
@@ -13,7 +12,6 @@ function Services() {
       <Header/>
       </div>
       <ServicesHero/>
-      <ServiceAdvantages/>
       <WhatMakesUsBest/>
       <Services8/>
       <DreamlandUAE/>
