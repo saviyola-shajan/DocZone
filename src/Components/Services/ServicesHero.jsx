@@ -3,7 +3,7 @@ import serviceimg from "../../assets/images/home4.png";
 
 function ServicesHero() {
   return (
-    <div className="bg-white max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-24 py-12">
+    <div className="bg-white max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-24 py-12 md:h-[90vh]">
       {/* Hero Title Section */}
       <div className="text-center pt-16 md:pt-24 pb-12">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-[#161616]">
