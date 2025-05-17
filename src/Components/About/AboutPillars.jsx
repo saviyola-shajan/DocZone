@@ -29,28 +29,30 @@ function AboutPillars() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-16 lg:gap-20 px-2 sm:px-6 md:px-10 py-12 sm:py-16">
-  {values.map((value, index) => (
-    <div
-      key={index}
-      className="relative bg-white text-black rounded-3xl py-6 sm:py-8 px-6 sm:px-12 shadow-lg border border-[#008364]"
-    >
-      <div className="text-6xl sm:text-7xl md:text-8xl font-medium flex gap-6 sm:gap-10">
-        <span
+      {values.map((value, index) => (
+  <div
+    key={index}
+    className={`relative rounded-3xl py-6 sm:py-8 px-6 sm:px-12 shadow-lg border border-[#008364] ${
+      index === 0 || index === 3 ? 'bg-black text-white' : 'bg-white text-black'
+    }`}
+  >
+    <div className="text-6xl sm:text-7xl md:text-8xl font-medium flex gap-6 sm:gap-10">
+    <span
           className={`${
             index === 0 || index === 3 ? 'text-[#22EEBF]' : 'text-[#006D54]'
           }`}
         >
           {value.number}
         </span>
-        <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#000000] mt-1 sm:mt-2 text-right">
-          {value.title}
-        </h3>
-      </div>
-      <p className="text-[#000000] font-normal text-base sm:text-lg mt-2">
-        {value.description}
-      </p>
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-1 sm:mt-2 text-right">
+        {value.title}
+      </h3>
     </div>
-  ))}
+    <p className="font-normal text-base sm:text-lg mt-2">
+      {value.description}
+    </p>
+  </div>
+))}
 </div>
 
 

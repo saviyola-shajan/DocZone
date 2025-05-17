@@ -52,7 +52,7 @@ function Header() {
             ))}
             <li>
               <Link
-                to=""
+                to="/contact"
                 className="group relative transition-all duration-300 px-4 py-2 rounded-full bg-[#22EEBF] text-black font-medium hover:bg-white"
               >
                 Connect Us
@@ -92,7 +92,7 @@ function Header() {
               ))}
               <li>
                 <Link
-                  to=""
+                  to="/contact"
                   onClick={() => setMobileMenuOpen(false)}
                   className="block px-4 py-2 mt-2 text-center rounded-full bg-[#22EEBF] text-black font-medium hover:bg-white"
                 >

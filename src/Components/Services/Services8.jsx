@@ -280,7 +280,7 @@ function Services() {
   return (
     <div className="min-h-screen p-4 sm:p-8 md:p-16 lg:p-24">
     <h1 className="text-[#07122D] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-left font-semibold">
-      Our Global<span className="text-[#22EEBF]"> Services</span>
+      Our Global<span className="text-[#018264]"> Services</span>
     </h1>
     <p className="mt-4 text-base sm:text-lg md:text-xl font-normal text-justify">
       At Doczone Dubai, our commitment transcends the mere act of service
@@ -291,7 +291,7 @@ function Services() {
   
     <div className="my-12 sm:my-16 md:my-24 hidden md:block">
       {slidesData.map((service, index) => (
-        <React.Fragment key={index}>
+        <React.Fragment key={index} id={service.num}>
           <div className="flex flex-col lg:flex-row mb-12 lg:mb-24">
             <div className="w-full lg:w-1/2 flex flex-col justify-center text-left">
               <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#121212] ml-2 sm:ml-4">
@@ -321,7 +321,7 @@ function Services() {
               <div className="bg-[#22EEBF] inline-block px-4 py-2 [clip-path:polygon(0_0,80%_0,100%_100%,0%_100%)] ml-4 sm:ml-6">
                 <h1 className="font-medium text-lg sm:text-xl md:text-2xl text-[#121212]">
                   Our{" "}
-                  <span className="text-[#FFFFFF] pr-10 sm:pr-16">
+                  <span className="text-[#121212] pr-10 sm:pr-16">
                     {service.heading}
                   </span>
                 </h1>

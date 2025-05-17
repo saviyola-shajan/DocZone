@@ -64,7 +64,7 @@ const Footer = () => {
           </h3>
           <ul className="leading-[40px] sm:leading-[45px] text-lg sm:text-xl font-300 text-[#FFFFFF99]">
             <li>
-              <a href="/branding" className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
+              <a href="/services#01" className="relative hover:no-underline before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-[1px] before:bg-white before:transition-all before:duration-300 hover:before:w-full">
                 Pro Services
               </a>
             </li>

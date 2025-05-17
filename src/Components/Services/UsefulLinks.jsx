@@ -16,7 +16,7 @@ const services = [
 
 function UsefulLimks() {
   return (
-    <div className="min-h-screen px-4 sm:px-6 md:px-12 lg:px-24 py-16 sm:py-24 items-center justify-center">
+    <div id="usefullinks" className="min-h-screen px-4 sm:px-6 md:px-12 lg:px-24 py-16 sm:py-24 items-center justify-center">
       <h1 className="text-left text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#018264]">
         Useful Links
       </h1>
@@ -29,7 +29,7 @@ function UsefulLimks() {
         relationships, cultivating trust, and guaranteeing that each encounter
         with our clients is marked by a sense of value and satisfaction.
       </p>
-      <div className="max-w-7xl mx-auto py-10 space-y-4">
+      <div className="max-w-7xl mr-10 mx-auto py-10 space-y-4">
       {services.map((service, index) => (
         <div
           key={index}

@@ -14,7 +14,7 @@ function WhatMakesUsBest() {
 
   return (
     <div className="h-auto lg:h-[70vh] flex flex-col lg:flex-row bg-[linear-gradient(93deg,_#3270BC_0%,_#092B60_48.48%,_#181325_97.53%)] backdrop-blur-[3px] mt-[20%] lg:mt-[35%] px-4 sm:px-10 md:px-16 lg:px-24 py-12 lg:py-24">
-      <div className="w-full lg:w-1/3 text-[#FFFFFF] text-center mb-12 flex flex-col lg:mb-0 justify-center items-center">
+      <div className="w-full lg:w-1/3 text-[#FFFFFF] text-center mb-12 flex flex-col lg:mb-14 md:mr-8 justify-center items-center">
         <h1 className="font-light text-4xl sm:text-5xl md:text-6xl">What Makes Us</h1>
         <h1 className="font-semibold text-5xl sm:text-7xl md:text-8xl mt-2 mb-8">The Best</h1>
         <Link

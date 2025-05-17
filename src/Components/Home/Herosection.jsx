@@ -5,7 +5,7 @@ import HomeImg from "../../assets/images/HOME IMAGE.jpg";
 import Header from "../Header";
 import { content } from "../Constants/Constant";
 import { motion } from "framer-motion";
-
+import { HashLink } from "react-router-hash-link";
 function Herosection() {
   const [index, setIndex] = useState(0);
 
@@ -59,14 +59,20 @@ function Herosection() {
                 <GoArrowUpRight className="text-black text-lg w-6 h-6 " />
               </span>
             </Link>
-            <a
-              href="/services"
+            <HashLink
+              to="/services#usefullinks"
+              scroll={(el) => {
+                const yOffset = -80;
+                const y =
+                  el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }}
               className="text-white font-light relative group flex items-center"
             >
               Useful Links
               <GoArrowRight className="w-5 h-5 ml-2" />
               <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            </HashLink>
           </div>
         </div>
 
@@ -114,14 +120,20 @@ function Herosection() {
               <GoArrowUpRight className="text-black text-lg w-6 h-6" />
             </span>
           </Link>
-          <a
-            href="/services"
-            className="text-white text-sm font-light relative group flex items-center justify-center"
+          <HashLink
+          to="/services#usefullinks"
+          scroll={(el) => {
+            const yOffset = -80;
+            const y =
+              el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }}
+          className="text-white font-light relative group flex items-center"
           >
             Useful Links
             <GoArrowRight className="w-5 h-5 ml-2" />
             <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
-          </a>
+          </HashLink>
         </div>
 
         {/* Image at bottom */}
