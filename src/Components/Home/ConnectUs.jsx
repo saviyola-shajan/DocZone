@@ -31,7 +31,7 @@ function ConnectUs() {
   return (
     <div className="min-h-screen px-4 sm:px-10 md:px-16 lg:px-20 xl:px-24 py-10 sm:py-16 md:py-24 flex flex-col lg:flex-row">
       <div className="w-full lg:w-1/2 flex justify-center items-center mb-10 lg:mb-0 rounded-xl overflow-hidden">
-        <img src={connectUs} alt="contact" className="max-w-full h-auto rounded-xl" />
+        <img src={connectUs} alt="contact" className="max-w-full h-auto rounded-xl mb-10" />
       </div>
 
       <div className="w-full lg:w-1/2 px-2 sm:px-6 text-white mt-4 lg:mt-8">

@@ -3,12 +3,11 @@ import { LuSquareArrowOutUpRight } from "react-icons/lu";
 
 const services = [
   { name: "International Visa and Passport Services", link: "https://www.blsindiavisa-uae.com/appointmentbls/appointment.php " },
-  { name: "Emirates Health Services", link: "https://dubaihealth.ae/medical-fitness-centers" },
+  { name: "Dubai Health Services", link: "https://dubaihealth.ae/medical-fitness-centers" },
   { name: "Dubai Insurance Services", link: "https://www.iloe.ae/" },
   { name: "Customer Happiness Centers", link: "/services/customer-happiness" },
-  { name: "Dubai Medical Fitness Centers", link: "/services/medical-fitness" },
   { name: "Unified Number Inquiry Service", link: "https://gdrfad.gov.ae/en/unified-number-inquiry-service" },
-  { name: "Fines Inquiry and Payment", link: "https://gdrfad.gov.ae/en/fines-inquiry-service" },
+  // { name: "Fines Inquiry and Payment", link: "https://gdrfad.gov.ae/en/fines-inquiry-service" },
   { name: "Zajel: Track your shipment", link: "https://zajel.com/" },
   { name: "EHS Medical Fitness Centers", link: "https://www.ehs.gov.ae/en/services/services-directory/examination-of-medical-fitness-for-residency-visa" },
   { name: "MOHRE Inquiry Services", link: "https://inquiry.mohre.gov.ae/" },
@@ -35,7 +34,7 @@ function UsefulLimks() {
         <div
           key={index}
           className={`flex items-center justify-between px-6 py-4 rounded-lg ${
-            index % 2 === 0 ? "bg-[#22EEBF] text-white" : "bg-black text-white"
+            index % 2 === 0 ? "bg-[#22EEBF] text-black" : "bg-black text-white"
           }`}
         >
           <h3 className="text-base sm:text-lg md:text-xl font-medium">

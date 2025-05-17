@@ -11,8 +11,7 @@ function HeroContact() {
         Contact Us
       </h1>
       <p className="text-base sm:text-lg md:text-xl max-w-2xl font-light mb-4 sm:mb-6 md:mb-8">
-        A document clearing and visa services company simplifies complex
-        administrative processes for individuals and businesses.
+      Get in touch with DocZone - your reliable partner in Dubai for document clearing and visa services. We're here to assist you every step of the way.
       </p>
     </div>
   );

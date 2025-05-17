@@ -19,18 +19,14 @@ function Herosection() {
 
   return (
     <div className="min-h-screen bg-cover bg-center relative mt-12 md:mt-0">
-      {/* Fixed Header */}
       <div className="fixed top-0 left-0 w-full z-50">
         <Header />
       </div>
-  
-      {/* Background Image */}
       <img
         src={HomeImg}
         alt="home img"
         className="w-full h-screen object-cover"
       />
-  
       {/* Desktop View */}
       <div className="hidden lg:flex absolute inset-0 flex-row justify-center items-center px-4 sm:px-8 md:px-12 lg:px-24 pt-20 md:pt-24">
         {/* Left Side */}
@@ -43,7 +39,7 @@ function Herosection() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 2 }}
-            className="text-4xl lg:text-6xl font-semibold text-white leading-tight min-h-[14rem]"
+            className="text-4xl lg:text-6xl font-semibold text-white leading-tight min-h-[14rem] pt-10"
           >
             {content[index].heading.split("\n")[0]} <br />
             {content[index].heading.split("\n")[1]}{" "}
@@ -51,16 +47,16 @@ function Herosection() {
               {content[index].heading.split("\n")[2]}
             </span>
           </motion.h1>
-  
+
           {/* Buttons */}
-          <div className="pt-10 flex gap-6">
+          <div className="pt-8 flex gap-6">
             <Link
               to="/contact"
-              className="group transition-all duration-300 text-black border-2 border-[#22EEBF] px-6 py-3 rounded-full bg-[#22EEBF] hover:bg-white font-medium flex items-center justify-between w-[60%]"
+              className="group transition-all duration-300 text-black border-2 border-[#22EEBF] px-4 py-2 md:px-6 md:py-3 rounded-full bg-[#22EEBF] hover:bg-white font-medium flex items-center justify-between  md:w-[60%]"
             >
               Connect With Us
-              <span className="w-9 h-9 flex items-center justify-center bg-white group-hover:bg-[#22EEBF] rounded-full ml-2">
-                <GoArrowUpRight className="text-black text-lg w-6 h-6" />
+              <span className="w-5 h-5 md:w-9 md:h-9 flex items-center justify-center bg-white group-hover:bg-[#22EEBF] rounded-full ml-2">
+                <GoArrowUpRight className="text-black text-lg w-6 h-6 " />
               </span>
             </Link>
             <a
@@ -73,17 +69,21 @@ function Herosection() {
             </a>
           </div>
         </div>
-  
+
         {/* Right Side Image */}
-        <div className="w-full lg:w-1/2 flex justify-end">
+        <motion.div
+          className="w-full lg:w-1/2 flex justify-end"
+          animate={{ y: [0, -10, 0] }}
+          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        >
           <img
             src={content[index].image}
             alt="SLIDER IMG"
             className="w-[75%] max-w-lg rounded-lg z-20"
           />
-        </div>
+        </motion.div>
       </div>
-  
+
       {/* Mobile View */}
       <div className="lg:hidden absolute inset-0 px-6 pt-8 flex flex-col items-center text-center">
         <p className="text-base sm:text-lg text-white mb-2">
@@ -102,7 +102,7 @@ function Herosection() {
             {content[index].heading.split("\n")[2]}
           </span>
         </motion.h1>
-  
+
         {/* Buttons */}
         <div className="mt-6 w-full flex flex-col items-center gap-4">
           <Link
@@ -123,7 +123,7 @@ function Herosection() {
             <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
           </a>
         </div>
-  
+
         {/* Image at bottom */}
         <div className="mt-8">
           <img
@@ -135,7 +135,6 @@ function Herosection() {
       </div>
     </div>
   );
-  
 }
 
 export default Herosection;

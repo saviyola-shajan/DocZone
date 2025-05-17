@@ -297,7 +297,7 @@ function Services() {
               <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#121212] ml-2 sm:ml-4">
                 {service.title1}
               </h1>
-              <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#22EEBF] mb-4 sm:mb-6 ml-2 sm:ml-4">
+              <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#018264] mb-4 sm:mb-6 ml-2 sm:ml-4">
                 {service.title2}
               </h1>
               <img src={service.img} alt="1" className="px-0 sm:px-6" />

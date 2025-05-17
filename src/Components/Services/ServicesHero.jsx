@@ -33,7 +33,7 @@ function ServicesHero() {
         {/* Text Content Second on small devices */}
         <div className="w-full lg:w-1/2 order-2 lg:order-1">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 mt-6 lg:mt-0">
-            Advantages of <span className="text-[#22EEBF]">Doczone!</span>
+            Advantages of <span className="text-[#018264]">Doczone!</span>
           </h2>
           <p className="text-black/80 text-base sm:text-lg leading-relaxed mb-8">
             At Doczone Dubai, our commitment goes far beyond simply delivering

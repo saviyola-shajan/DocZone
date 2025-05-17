@@ -41,8 +41,7 @@ function GetIntouch() {
           Contact & Get in touch with us
         </h1>
         <p className="font-normal text-base sm:text-lg md:text-xl text-[#000000] mt-2">
-          A document clearing and visa services company simplifies complex
-          administrative processes for individuals and businesses.
+        Reach out to DocZone for expert document clearing and visa services in Dubai quick support, clear guidance, and reliable solutions for all your needs. 
         </p>
         <div className=" pr-10 py-10">
           <form onSubmit={formik.handleSubmit} className="space-y-4">
