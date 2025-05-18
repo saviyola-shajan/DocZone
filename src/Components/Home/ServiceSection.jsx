@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,6 +10,7 @@ import { settings } from "../Constants/Constant";
 function ServiceSection() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className="px-4 sm:px-8 md:px-16 lg:px-24 py-10 sm:py-16 md:py-20 h-auto lg:min-h-screen relative">
@@ -57,6 +58,9 @@ function ServiceSection() {
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
           }}
+          onSlideChange={(swiper) => {
+            setActiveIndex(swiper.realIndex);
+          }}
           modules={[Navigation]}
           className="w-full mt-10"
         >
@@ -88,6 +92,17 @@ function ServiceSection() {
             </SwiperSlide>
           ))}
         </Swiper>
+        {/* Custom dots for small devices only */}
+        <div className="flex justify-center items-center mt-4 space-x-2 md:hidden">
+          {[0, 1, 2, 3].map((dot, idx) => (
+            <span
+              key={idx}
+              className={`w-2.5 h-2.5 rounded-full ${
+                activeIndex % 4 === idx ? "bg-[#22EEBF]" : "bg-gray-400"
+              }`}
+            ></span>
+          ))}
+        </div>
       </div>
     </div>
   );

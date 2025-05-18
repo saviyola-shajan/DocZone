@@ -41,18 +41,19 @@ function UsefulLimks() {
             {service.name}
           </h3>
           <a
-            href={service.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium text-sm sm:text-base transition ${
-              index % 2 === 0
-                ? "bg-white text-black "
-                : "bg-white text-black"
-            }`}
-          >
-            Visit Site <LuSquareArrowOutUpRight />
-          </a>
-        </div>
+  href={service.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium text-sm sm:text-base transition whitespace-nowrap ${
+    index % 2 === 0
+      ? "bg-white text-black"
+      : "bg-white text-black"
+  }`}
+>
+  Visit Site <LuSquareArrowOutUpRight />
+</a>
+
+          </div>
       ))}
     </div>
     </div>

@@ -44,11 +44,11 @@ function AboutPillars() {
         >
           {value.number}
         </span>
-      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-1 sm:mt-2 text-right">
+      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-1 sm:mt-2 text-left">
         {value.title}
       </h3>
     </div>
-    <p className="font-normal text-base sm:text-lg mt-2">
+    <p className="font-normal text-base sm:text-lg mt-2 text-justify">
       {value.description}
     </p>
   </div>

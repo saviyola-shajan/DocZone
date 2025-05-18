@@ -3,7 +3,7 @@ import serviceimg from "../../assets/images/home4.png";
 
 function ServicesHero() {
   return (
-    <div className="bg-white max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-24 py-12 md:h-[90vh]">
+    <div className="bg-white max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-24 py-12 h-auto md:h-[90vh]">
       {/* Hero Title Section */}
       <div className="text-center pt-16 md:pt-24 pb-12">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-[#161616]">
@@ -35,7 +35,7 @@ function ServicesHero() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 mt-6 lg:mt-0">
             Advantages of <span className="text-[#018264]">Doczone!</span>
           </h2>
-          <p className="text-black/80 text-base sm:text-lg leading-relaxed mb-8">
+          <p className="text-black/80 text-base sm:text-lg leading-relaxed mb-8 text-justify">
             At Doczone Dubai, our commitment goes far beyond simply delivering
             services. We believe in building lasting partnerships grounded in
             trust, reliability, and excellence. Every interaction is a reflection

@@ -1,19 +1,26 @@
 import React from "react";
 import GoogleReviewImage from "../../assets/images/googlereviews.png";
 import reviewImg from "../../assets/images/reviewimg.png";
+import reviewImgMob from "../../assets/images/googlerewMB.jpg"
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
 
 function Reviews() {
   return (
-    <div className="lg:min-h-[65dvh] h-[85dvh] relative">
+    <div className="lg:h-[75dvh] h-[125vh] relative">
+      <div>
       <img
         src={GoogleReviewImage}
         alt="img"
-        className="absolute h-[80dvh] sm:h-[85dvh] md:h-[85dvh] lg:h-[90dvh] w-full object-cover"
+        className="hidden md:block absolute h-[80dvh] sm:h-[85dvh] md:h-[85dvh] lg:h-[90dvh] w-full object-cover"
       />
-      
+       <img
+        src={reviewImgMob}
+        alt="img"
+        className=" block md:hidden absolute h-[80dvh] sm:h-[85dvh] md:h-[85dvh] lg:h-[90dvh] w-full object-cover"
+      />
+      </div>
       {/* Flex wrapper to align content right on large screens */}
       <div className="absolute top-0 left-0 w-full h-full flex items-end lg:justify-end md:mt-8 lg:mt-28">
         <div className="text-[#FFFFFF] w-full lg:w-1/2 px-4 sm:px-10 md:px-16 lg:px-20 xl:px-24 2xl:px-28 py-10 sm:py-14 md:py-16 lg:py-24 max-w-6xl">

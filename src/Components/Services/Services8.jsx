@@ -385,8 +385,8 @@ function Services() {
       {/* Process Box */}
       <div className="bg-gradient-to-br from-[#1D2C61CC] to-[#050F29] text-white rounded-t-2xl px-5 py-6">
         <div className="bg-[#22EEBF] inline-block px-4 py-2 [clip-path:polygon(0_0,80%_0,100%_100%,0%_100%)] mb-6">
-          <h1 className="text-[#121212] font-semibold text-lg">
-            Our <span className="text-white">{service.heading}</span>
+          <h1 className="text-[#121212] font-semibold text-lg pr-8">
+            Our <span className="text-[#121212]">{service.heading}</span>
           </h1>
         </div>
 

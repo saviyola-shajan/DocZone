@@ -54,7 +54,7 @@ function Whatwedo() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row pt-12 md:pt-20 gap-10 lg:pl-16">
+      <div className="flex flex-col lg:flex-row pt-12 md:pt-20 gap-6 lg:pl-16">
         <motion.div
           className="space-y-6 w-full lg:w-auto"
           initial="hidden"
@@ -95,7 +95,7 @@ function Whatwedo() {
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-6 w-full lg:w-auto">
-          <div className="hidden md:block w-full lg:w-72 h-auto sm:h-[480px]">
+          <div className=" hidden md:block w-full lg:w-72 h-auto sm:h-[480px]">
             <img
               src={Image}
               alt="City"
@@ -104,7 +104,7 @@ function Whatwedo() {
           </div>
 
           <motion.div
-            className="space-y-4 w-full lg:w-96"
+            className="space-y-6 w-full lg:w-96"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
