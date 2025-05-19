@@ -73,7 +73,7 @@ function Details() {
           </p>
           <Link
             to="/contact"
-            className="relative transition-all duration-300 mt-4 text-[#000000] border border-[#22EEBF] hover:bg-[#ffffff]  text-sm sm:text-base md:text-lg px-6 py-2 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[70%] sm:w-[50%] md:w-[35%] lg:w-[22%]"
+            className=" relative transition-all duration-300 mt-4 text-[#000000] border border-[#22EEBF] hover:bg-[#ffffff]  text-sm sm:text-base md:text-lg px-6 py-2 rounded-full bg-[#22EEBF] font-medium flex items-center justify-between w-[70%] sm:w-[50%] md:w-[35%] lg:w-[22%]"
           >
             Connect With Us
             <span className="w-8 sm:w-9 h-8 sm:h-9 flex items-center justify-center bg-[#FFFFFF] rounded-full group-hover:bg-[#22EEBF]">

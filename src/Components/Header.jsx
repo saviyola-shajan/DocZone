@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/vectors/logo.png";
 import { RxCross2 } from "react-icons/rx";
@@ -7,7 +7,23 @@ function Header() {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const menuRef = useRef();
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    if (mobileMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [mobileMenuOpen]);
   const getActiveNav = () => {
     const path = location.pathname.replace("/home", "");
     return path ? path.charAt(0).toUpperCase() + path.slice(1) : "Home";
@@ -64,6 +80,7 @@ function Header() {
 
       {/* Mobile Header */}
       <header
+      ref={menuRef}
         className={`md:hidden  fixed top-0 left-0 w-full flex justify-between items-center px-6 py-2 z-50 transition-all duration-300 ${
           isScrolled || location.pathname !== "/" ? "bg-customBg shadow-lg" : "bg-transparent"
         }`}

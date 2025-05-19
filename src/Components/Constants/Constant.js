@@ -5,25 +5,25 @@ import Home4 from "../../assets/images/home4.png";
  export const content = [
     {
       text: "Your Documents,",
-      heading: " Cleared with Trust and Precision ",
+      heading: " Cleared with Precision and Trust. ",
       highlight: "#22EEBF",
       image: Home1,
     },
     {
       text: "Your Documents,",
-      heading: " Cleared with Expertise and Integrity",
+      heading: " Cleared with Expertise and Integrity.",
       highlight: "#FFA500",
       image: Home2,
     },
     {
       text: "Your Documents,",
-      heading: "Cleared with Accuracy and Assurance",
+      heading: "Cleared with Accuracy and Assurance.",
       highlight: "#FF5733",
       image: Home3,
     },
     {
       text: "Your Documents,",
-      heading: "Cleared with Efficiency and Confidence",
+      heading: "Cleared with Efficiency and Confidence.",
       highlight: "#1E90FF",
       image: Home4,
     },

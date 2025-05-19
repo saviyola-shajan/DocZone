@@ -83,7 +83,7 @@ function FAQ() {
   };
 
   return (
-    <div className="h-auto px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24 py-10 sm:py-16 md:py-20 text-[#FFFFFF]">
+    <div className="h-auto px-4 sm:px-8 md:px-16 lg:px-20 xl:px-24 py-10 sm:py-16 md:pb-20 md:mt-28 text-[#FFFFFF]">
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-medium">
         Frequently
         <br />

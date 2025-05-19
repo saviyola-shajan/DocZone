@@ -27,10 +27,15 @@ const flowingCard = {
     backgroundPosition: "0% center",
     transition: {
       opacity: { duration: 0.6, delay: i * 0.3 },
-      backgroundPosition: { duration: 1.2, delay: i * 0.3, ease: "easeInOut" },
+      backgroundPosition: {
+        duration: 1.2,
+        delay: i * 1,
+        ease: "easeInOut",
+      },
     },
   }),
 };
+
 
 function Whatwedo() {
   return (

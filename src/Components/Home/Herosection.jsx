@@ -78,9 +78,11 @@ function Herosection() {
 
         {/* Right Side Image */}
         <motion.div
+          key={index}
           className="w-full lg:w-1/2 flex justify-end"
-          animate={{ y: [0, -10, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          initial={{ opacity: 0, y: 60 }}
+          animate={{ opacity: 1.5, y: 0 }}
+          transition={{ duration: 2.5 }}
         >
           <img
             src={content[index].image}
@@ -95,19 +97,21 @@ function Herosection() {
         <p className="text-base sm:text-lg text-white mb-2">
           {content[index].text}
         </p>
-        <motion.h1
-          key={index}
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2 }}
-          className="text-3xl sm:text-4xl font-semibold text-white leading-snug"
-        >
-          {content[index].heading.split("\n")[0]} <br />
-          {content[index].heading.split("\n")[1]}{" "}
-          <span style={{ color: content[index].highlight }}>
-            {content[index].heading.split("\n")[2]}
-          </span>
-        </motion.h1>
+        <div className="relative h-[16rem] pt-10 pb-24 w-full">
+          <motion.h1
+            key={index}
+            initial={{ opacity: 0, y: 50, position: "absolute", top: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2 }}
+            className="absolute top-0 left-0 right-0 text-4xl font-semibold text-white leading-tight text-center"
+          >
+            {content[index].heading.split("\n")[0]} <br />
+            {content[index].heading.split("\n")[1]}{" "}
+            <span style={{ color: content[index].highlight }}>
+              {content[index].heading.split("\n")[2]}
+            </span>
+          </motion.h1>
+        </div>
 
         {/* Buttons */}
         <div className="mt-6 w-full flex flex-col items-center gap-4">
@@ -121,14 +125,14 @@ function Herosection() {
             </span>
           </Link>
           <HashLink
-          to="/services#usefullinks"
-          scroll={(el) => {
-            const yOffset = -80;
-            const y =
-              el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({ top: y, behavior: "smooth" });
-          }}
-          className="text-white font-light relative group flex items-center"
+            to="/services#usefullinks"
+            scroll={(el) => {
+              const yOffset = -80;
+              const y =
+                el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+              window.scrollTo({ top: y, behavior: "smooth" });
+            }}
+            className="text-white font-light relative group flex items-center"
           >
             Useful Links
             <GoArrowRight className="w-5 h-5 ml-2" />
@@ -137,13 +141,19 @@ function Herosection() {
         </div>
 
         {/* Image at bottom */}
-        <div className="mt-8">
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 60 }}
+          animate={{ opacity: 1.5, y: 0 }}
+          transition={{ duration: 2.5 }}
+          className="mt-8"
+        >
           <img
             src={content[index].image}
             alt="SLIDER IMG"
             className="w-60 sm:w-72 md:w-80 rounded-lg"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
