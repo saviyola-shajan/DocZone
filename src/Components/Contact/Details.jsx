@@ -34,10 +34,10 @@ function Details() {
               <p className="font-medium text-xl sm:text-2xl">Contact Us On</p>
             </div>
             <div className="mt-2">
-            <a href="tel:+971545840594">
-                <p className="text-base sm:text-lg font-light">+971545840594</p>
+            <a href="tel:+97143302526">
+                <p className="text-base sm:text-lg font-light">+97143302526</p>
               </a>
-              <a href="tel:+971545840594">
+              <a href="https://wa.me/+971545840594">
                 <p className="text-base sm:text-lg font-light">+971545840594</p>
               </a>
             </div>

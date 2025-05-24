@@ -138,10 +138,10 @@ const Footer = () => {
                 <FaPhoneVolume />
               </p>
               <a
-                href="tel:+971545840594"
+                href="tel:+97143302526"
                 className="text-[#FFFFFF] hover:underline"
               >
-                +971545840594
+                +97143302526
               </a>
             </li>
             <li className="flex items-center gap-2 flex-wrap justify-center sm:justify-start">

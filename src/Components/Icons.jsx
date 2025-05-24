@@ -22,7 +22,7 @@ function Icons() {
       </a>
 
       {/* Call Icon */}
-      <a href="tel:+919562978418" target="_blank" rel="noopener noreferrer">
+      <a href="tel:+97143302526" target="_blank" rel="noopener noreferrer">
         <img 
           src={callIcon} 
           alt="Call" 
