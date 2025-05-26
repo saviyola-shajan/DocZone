@@ -3,13 +3,14 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import connectUs from "../assets/images/popup.jpg";
 import { RxCross2 } from "react-icons/rx";
+
 function PopUp() {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
-    },4000); // 10 seconds
+    }, 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -40,25 +41,31 @@ function PopUp() {
   if (!showPopup) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white text-black w-full max-w-4xl rounded-xl shadow-lg p-8 sm:p-10 relative">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center pt-16 md:pt-0 z-50 px-4 sm:px-6 lg:px-12">
+      <div className="bg-white text-black w-full max-w-6xl rounded-xl shadow-lg p-6 sm:p-8 md:p-10 relative overflow-y-auto max-h-[90vh]">
         <button
           onClick={() => setShowPopup(false)}
-          className="absolute top-3 right-4 text-2xl font-bold text-gray-700 hover:text-red-500"
+          className="absolute top-1 right-1 md:top-3 md:right-4 text-2xl font-bold text-gray-700 hover:text-red-500"
         >
-          <RxCross2/>
+          <RxCross2 />
         </button>
 
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">
+          {/* Image Section */}
           <div className="w-full lg:w-1/2 flex justify-center items-center">
-            <img src={connectUs} alt="contact" className="rounded-xl w-full h-auto" />
+            <img
+              src={connectUs}
+              alt="contact"
+              className="rounded-xl w-full h-auto object-cover"
+            />
           </div>
 
+          {/* Form Section */}
           <div className="w-full lg:w-1/2">
-            <h1 className="text-2xl sm:text-3xl font-semibold mb-6">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6">
               Connect With Us For More Enquiry
             </h1>
-            <form onSubmit={formik.handleSubmit} className="space-y-6">
+            <form onSubmit={formik.handleSubmit} className="space-y-5 sm:space-y-6">
               <div>
                 <input
                   type="text"
@@ -71,6 +78,7 @@ function PopUp() {
                   <p className="text-red-600 text-sm">{formik.errors.name}</p>
                 )}
               </div>
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="w-full sm:w-1/2">
                   <input
@@ -97,6 +105,7 @@ function PopUp() {
                   )}
                 </div>
               </div>
+
               <div>
                 <input
                   type="text"
@@ -106,6 +115,7 @@ function PopUp() {
                   {...formik.getFieldProps("location")}
                 />
               </div>
+
               <div>
                 <textarea
                   name="message"
@@ -115,12 +125,15 @@ function PopUp() {
                   {...formik.getFieldProps("message")}
                 ></textarea>
               </div>
-              <button
-                type="submit"
-                className="w-[60%] sm:w-[40%] bg-[#22EEBF] hover:bg-[#ffffff] text-black text-xl font-medium py-2 rounded-full"
-              >
-                Submit
-              </button>
+
+              <div className="flex justify-center sm:justify-start">
+                <button
+                  type="submit"
+                  className="w-3/4 sm:w-1/2 md:w-[40%] bg-[#22EEBF] hover:bg-white hover:border hover:border-[#22EEBF] text-black text-lg md:text-xl font-medium py-2 rounded-full transition-all"
+                >
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>

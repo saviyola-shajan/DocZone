@@ -114,7 +114,7 @@ function Herosection() {
         </div>
 
         {/* Buttons */}
-        <div className="mt-6 w-full flex flex-col items-center gap-4">
+        <div className="-mt-10 w-full flex flex-col items-center gap-4">
           <Link
             to="/contact"
             className="group transition-all duration-300 text-black border-2 border-[#22EEBF] px-6 py-3 rounded-full bg-[#22EEBF] hover:bg-white font-medium flex items-center justify-between w-full max-w-xs"
