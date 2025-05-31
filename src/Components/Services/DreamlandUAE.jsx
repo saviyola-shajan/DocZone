@@ -1,5 +1,5 @@
 import React from "react";
-import dreamland from "../../assets/images/built successfull.jpg";
+const dreamland = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/built-successfull.jpg";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
 

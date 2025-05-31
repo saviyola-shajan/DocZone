@@ -1,11 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-const connectUs = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/popup-low-scaled.jpg";
 import { RxCross2 } from "react-icons/rx";
+import emailjs from "@emailjs/browser";
+
+const connectUs =
+  "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/popup-low-scaled.jpg";
 
 function PopUp() {
   const [showPopup, setShowPopup] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState(null);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const form = useRef();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -31,44 +37,54 @@ function PopUp() {
       location: "",
     },
     validationSchema,
-    onSubmit: (values) => {
-      console.log("Form Data:", values);
-      alert("Form submitted successfully!");
-      setShowPopup(false);
+    onSubmit: (values, { resetForm }) => {
+      emailjs
+        .sendForm("service_x7gyyl8", "template_aslz3fx", form.current, {
+          publicKey: "kDLDQ_xNAdA2eDU9K",
+        })
+        .then(
+          () => {
+            setIsSuccess(true);
+            setSubmitMessage("Message sent successfully...!");
+            resetForm();
+          },
+          (error) => {
+            console.error("EmailJS Error:", error);
+            setIsSuccess(false);
+            setSubmitMessage("Failed to send message,! Try again.");
+          }
+        );
     },
   });
 
   if (!showPopup) return null;
 
   return (
-    <div className="hidden lg:fixed lg:inset-0 lg:bg-black lg:bg-opacity-50 lg:flex lg:items-center lg:justify-center lg:pt-16 md:pt-24 lg:z-50 px-4 sm:px-6 lg:px-8">
-      <div className="bg-white text-black w-full max-w-6xl rounded-xl shadow-lg p-4 sm:p-6 md:p-6 relative overflow-y-auto md:overflow-hidden max-h-[86vh]">
+    <div className="hidded md:fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white text-black w-full max-w-6xl h-[70vh] rounded-xl shadow-lg p-4 sm:p-6 md:p-6 relative overflow-y-auto">
         <button
           onClick={() => setShowPopup(false)}
-          className="absolute top-1 right-1 md:top-3 md:right-4 text-2xl font-bold text-gray-700 hover:text-red-500"
+          className="absolute top-2 right-3 text-2xl font-bold text-gray-700 hover:text-red-500"
         >
           <RxCross2 />
         </button>
 
-        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6">
+        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 h-full">
           {/* Image Section */}
           <div className="w-full lg:w-1/2 flex justify-center items-center">
             <img
               src={connectUs}
               alt="contact"
-              className="rounded-xl w-full h-auto object-cover"
+              className="rounded-xl w-full object-cover h-[66vh]"
             />
           </div>
 
           {/* Form Section */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 overflow-y-auto pr-2">
             <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6">
               Connect With Us For More Enquiry
             </h1>
-            <form
-              onSubmit={formik.handleSubmit}
-              className="space-y-5 sm:space-y-6"
-            >
+            <form ref={form} onSubmit={formik.handleSubmit} className="space-y-5 sm:space-y-6">
               <div>
                 <input
                   type="text"
@@ -92,9 +108,7 @@ function PopUp() {
                     {...formik.getFieldProps("mobile")}
                   />
                   {formik.touched.mobile && formik.errors.mobile && (
-                    <p className="text-red-600 text-sm">
-                      {formik.errors.mobile}
-                    </p>
+                    <p className="text-red-600 text-sm">{formik.errors.mobile}</p>
                   )}
                 </div>
                 <div className="w-full sm:w-1/2">
@@ -106,9 +120,7 @@ function PopUp() {
                     {...formik.getFieldProps("email")}
                   />
                   {formik.touched.email && formik.errors.email && (
-                    <p className="text-red-600 text-sm">
-                      {formik.errors.email}
-                    </p>
+                    <p className="text-red-600 text-sm">{formik.errors.email}</p>
                   )}
                 </div>
               </div>
@@ -133,13 +145,22 @@ function PopUp() {
                 ></textarea>
               </div>
 
-              <div className="flex justify-center sm:justify-start">
+              <div className="flex flex-col items-center sm:items-start">
                 <button
                   type="submit"
                   className="w-3/4 sm:w-1/2 md:w-[40%] bg-[#22EEBF] hover:bg-white hover:border hover:border-[#22EEBF] text-black text-lg md:text-xl font-medium py-2 rounded-full transition-all"
                 >
                   Submit
                 </button>
+                {submitMessage && (
+                  <p
+                    className={`mt-3 text-xl font-medium ${
+                      isSuccess ? "text-green-600" : "text-red-600"
+                    }`}
+                  >
+                    {submitMessage}
+                  </p>
+                )}
               </div>
             </form>
           </div>

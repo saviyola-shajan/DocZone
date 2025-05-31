@@ -1,7 +1,7 @@
 import React from "react";
 const GoogleReviewImage = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/googlereviews.png";
 const reviewImg = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/reviewimg.png";
-import reviewImgMob from "../../assets/images/googlerewMB.jpg"
+const reviewImgMob = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/googlerewMB-scaled.jpg"
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";

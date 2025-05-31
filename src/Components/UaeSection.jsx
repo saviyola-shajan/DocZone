@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
-const UaeImage = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/ublocking-low-size.jpg";
+const UaeImage = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/UNBLOCKING-scaled.jpg";
 
 function UaeSection({ bgColor = "#FFFFFF" }) {
   const isDarkBg = bgColor === "#081C46";
