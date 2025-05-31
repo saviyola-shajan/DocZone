@@ -1,5 +1,5 @@
 import React from "react";
-import getinTouch from "../../assets/images/getintouchimg.png";
+const getinTouch = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/getintouchimg.png";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 

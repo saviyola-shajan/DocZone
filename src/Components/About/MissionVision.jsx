@@ -1,8 +1,8 @@
 import React from "react";
-import visioimg from "../../assets/images/visionimg.png";
-import Mission1 from "../../assets/images/mission1.png";
-import Mission2 from "../../assets/images/mission2.png";
-import Mission3 from "../../assets/images/mission3.png";
+const visioimg = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/visionimg.png";
+const Mission1 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/mission1.png";
+const Mission2 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/mission2.png";
+const Mission3 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/mission3.png";
 
 function MissionVision() {
   return (

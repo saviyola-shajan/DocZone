@@ -1,7 +1,7 @@
-import Home1 from "../../assets/images/home1.png";
-import Home2 from "../../assets/images/home2.png";
-import Home3 from "../../assets/images/home3.png";
-import Home4 from "../../assets/images/home4.png";
+const Home1 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/home1.png";
+const Home2 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/home2.png";
+const Home3 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/home3-scaled.png";
+const Home4 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/home4.png";
  export const content = [
     {
       text: "Your Documents,",
@@ -56,9 +56,9 @@ import Home4 from "../../assets/images/home4.png";
     },
   ];
 
-  import why1 from "../../assets/images/why1.png";
-  import why2 from "../../assets/images/why2.png";
-  import why3 from "../../assets/images/why3.png";
+  const why1 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/why1.png";
+  const why2 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/why2.png";
+  const why3 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/why3.png";
   export const cardData = [
     {
       title: "A Decade of Mastery:",
@@ -83,12 +83,12 @@ import Home4 from "../../assets/images/home4.png";
       },
   ];
 
-import Hom1 from "../../assets/images/services1.png";
-import Hom2 from "../../assets/images/services2.png";
-import Hom3 from "../../assets/images/services3.png";
-import Hom4 from "../../assets/images/services4.png";
-import Hom5 from "../../assets/images/services5.png";
-import Hom6 from "../../assets/images/services6.png";
+const Hom1 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/services1.png";
+const Hom2 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/services2.png";
+const Hom3 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/services3.png";
+const Hom4 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/services4.png";
+const Hom5 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/services5.png";
+const Hom6 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/services6.png";
   export const settings = [
     {
       num: "01",

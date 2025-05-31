@@ -1,6 +1,6 @@
-import whatsappIcon from "../assets/images/social.png";
-import callIcon from "../assets/images/call.png";
-import instaIcon from "../assets/images/instagram.png";
+const whatsappIcon = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/social.png";
+const callIcon = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/call.png";
+const instaIcon = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/instagram.png";
 
 function Icons() {
   return (

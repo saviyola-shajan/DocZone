@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImg from "../../assets/images/aboutimg.png";
+const AboutImg = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/aboutimg.png";
 
 function AboutHeroSection() {
   return (

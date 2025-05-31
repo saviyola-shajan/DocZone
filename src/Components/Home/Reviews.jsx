@@ -1,6 +1,6 @@
 import React from "react";
-import GoogleReviewImage from "../../assets/images/googlereviews.png";
-import reviewImg from "../../assets/images/reviewimg.png";
+const GoogleReviewImage = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/googlereviews.png";
+const reviewImg = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/reviewimg.png";
 import reviewImgMob from "../../assets/images/googlerewMB.jpg"
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";

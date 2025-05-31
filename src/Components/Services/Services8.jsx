@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import servicesman1 from "../../assets/images/ser1.png";
-import servicesman2 from "../../assets/images/ser2.png";
-import servicesman3 from "../../assets/images/ser3.png";
-import servicesman4 from "../../assets/images/ser4.png";
-import servicesman5 from "../../assets/images/ser5.png";
-import servicesman6 from "../../assets/images/ser6.png";
-import servicesman7 from "../../assets/images/ser7.png";
-import servicesman8 from "../../assets/images/ser8.png";
+const servicesman1 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/ser1.png";
+const servicesman2 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/ser2.png";
+const servicesman3 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/ser3.png";
+const servicesman4 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/ser4.png";
+const servicesman5 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/ser5.png";
+const servicesman6 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/ser6.png";
+const servicesman7 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/ser7.png";
+const servicesman8 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/ser8.png";
 
 import { FaArrowDown, FaArrowUp } from "react-icons/fa6";
 

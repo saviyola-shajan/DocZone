@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import connectUs from "../assets/images/popup.jpg";
+const connectUs = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/popup-low-scaled.jpg";
 import { RxCross2 } from "react-icons/rx";
 
 function PopUp() {
@@ -10,7 +10,7 @@ function PopUp() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 4000);
+    }, 8000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -41,8 +41,8 @@ function PopUp() {
   if (!showPopup) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center pt-16 md:pt-0 z-50 px-4 sm:px-6 lg:px-12">
-      <div className="bg-white text-black w-full max-w-6xl rounded-xl shadow-lg p-6 sm:p-8 md:p-10 relative overflow-y-auto max-h-[90vh]">
+    <div className="hidden lg:fixed lg:inset-0 lg:bg-black lg:bg-opacity-50 lg:flex lg:items-center lg:justify-center lg:pt-16 md:pt-24 lg:z-50 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white text-black w-full max-w-6xl rounded-xl shadow-lg p-4 sm:p-6 md:p-6 relative overflow-y-auto md:overflow-hidden max-h-[86vh]">
         <button
           onClick={() => setShowPopup(false)}
           className="absolute top-1 right-1 md:top-3 md:right-4 text-2xl font-bold text-gray-700 hover:text-red-500"
@@ -50,7 +50,7 @@ function PopUp() {
           <RxCross2 />
         </button>
 
-        <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">
+        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6">
           {/* Image Section */}
           <div className="w-full lg:w-1/2 flex justify-center items-center">
             <img
@@ -65,7 +65,10 @@ function PopUp() {
             <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-6">
               Connect With Us For More Enquiry
             </h1>
-            <form onSubmit={formik.handleSubmit} className="space-y-5 sm:space-y-6">
+            <form
+              onSubmit={formik.handleSubmit}
+              className="space-y-5 sm:space-y-6"
+            >
               <div>
                 <input
                   type="text"
@@ -89,7 +92,9 @@ function PopUp() {
                     {...formik.getFieldProps("mobile")}
                   />
                   {formik.touched.mobile && formik.errors.mobile && (
-                    <p className="text-red-600 text-sm">{formik.errors.mobile}</p>
+                    <p className="text-red-600 text-sm">
+                      {formik.errors.mobile}
+                    </p>
                   )}
                 </div>
                 <div className="w-full sm:w-1/2">
@@ -101,7 +106,9 @@ function PopUp() {
                     {...formik.getFieldProps("email")}
                   />
                   {formik.touched.email && formik.errors.email && (
-                    <p className="text-red-600 text-sm">{formik.errors.email}</p>
+                    <p className="text-red-600 text-sm">
+                      {formik.errors.email}
+                    </p>
                   )}
                 </div>
               </div>

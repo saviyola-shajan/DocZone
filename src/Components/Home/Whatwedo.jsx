@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../assets/images/PROCESS.jpg";
+const Image = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/PROCESS-scaled.jpg";
 import { GoArrowUpRight } from "react-icons/go";
 import { motion } from "framer-motion";
 const steps = [

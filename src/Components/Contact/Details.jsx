@@ -1,6 +1,6 @@
 import React from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import conctact2 from "../../assets/images/contactimg2.png";
+const conctact2 = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/contactimg2.png";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
 

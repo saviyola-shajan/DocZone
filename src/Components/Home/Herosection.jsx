@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight, GoArrowRight } from "react-icons/go";
-import HomeImg from "../../assets/images/HOME IMAGE.jpg";
+const HomeImg = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/Adobe-Express-file-scaled.jpg";
 import Header from "../Header";
 import { content } from "../Constants/Constant";
 import { motion } from "framer-motion";

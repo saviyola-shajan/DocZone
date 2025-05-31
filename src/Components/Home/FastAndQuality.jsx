@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../assets/images/fastsectionimg.png";
+const Image = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/fastsectionimg.png";
 import { Link } from "react-router-dom";
 import { GoArrowUpRight } from "react-icons/go";
 

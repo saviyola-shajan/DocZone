@@ -1,5 +1,5 @@
 import React from "react";
-import contactimg from "../../assets/images/contactimg.png";
+const contactimg = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/contactimg.png";
 
 function HeroContact() {
   return (

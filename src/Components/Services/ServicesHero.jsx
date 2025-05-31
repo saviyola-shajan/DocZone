@@ -1,5 +1,5 @@
 import React from 'react';
-import serviceimg from "../../assets/images/home4.png";
+const serviceimg = "https://wpcms.doczonedubai.com/wp-content/uploads/2025/05/home4-scaled.png";
 
 function ServicesHero() {
   return (
